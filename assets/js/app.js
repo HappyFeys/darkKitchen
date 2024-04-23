@@ -17,3 +17,9 @@ import sort from './component/sort.js';
 main();
 sort();
 
+
+
+// Maintenant vous pouvez utiliser le fichier importé ici
+variablesComponent();
+headerComponent();
+mainComponent();
