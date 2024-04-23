@@ -452,13 +452,5 @@ const articles = [
             ingredients: ["pâte miso", "eau", "tofu"]
           }
         ]
-<<<<<<< HEAD
-      }
 
 export default articles
-=======
-
-
-
-      export default articles;
->>>>>>> manu
