@@ -1,5 +1,15 @@
-@import 'reset'; // les resets
-@import 'config'; // les variables
-@import 'home'; // la page home
-@import 'panier'; //le panier
-@import 'card'; //les cards générés en JS
+@import "./reset.scss"; // les resets
+@import "./config.scss"; // les variables
+@import "./panier.scss"; //le panier
+@import "./card.scss"; //les cards générés en JS
+
+
+body{
+    font-family: $nunito;
+    article {
+        border: 2px solid black;
+        margin-bottom: 3%;
+        margin-top: 5%;
+      }
+}
+
