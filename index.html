@@ -5,8 +5,51 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="main.css">
     <title>Dark Kitchen</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200..1000;1,200..1000&display=swap" rel="stylesheet">
 </head>
 <body>
+    <div class="container">
+        <h1>Dark Kitchen - Menu</h1>
+        
+        <div class="dark-mode-toggle">
+            <label for="dark-mode-switch">Dark Mode:</label>
+            <input type="checkbox" id="dark-mode-switch">
+        </div>
+
+        <div class="card">
+            <h2 class="category">Vegan</h2>
+            <div class="dish">
+                <h3>Tofu Stir Fry</h3>
+                <p>$10.99</p>
+                <button onclick="addToCart('Tofu Stir Fry', 10.99)">Add to Cart</button>
+            </div>
+            <div class="dish">
+                <h3>Quinoa Salad</h3>
+                <p>$8.99</p>
+                <button onclick="addToCart('Quinoa Salad', 8.99)">Add to Cart</button>
+            </div>
+        </div>
+
+        <div class="card">
+            <h2 class="category">Comfort Food</h2>
+            <div class="dish">
+                <h3>Mac 'n' Cheese</h3>
+                <p>$12.99</p>
+                <button onclick="addToCart('Mac \'n\' Cheese', 12.99)">Add to Cart</button>
+            </div>
+            <div class="dish">
+                <h3>Chicken Pot Pie</h3>
+                <p>$14.99</p>
+                <button onclick="addToCart('Chicken Pot Pie', 14.99)">Add to Cart</button>
+            </div>
+        </div>
+
+        <div id="cart" class="cart">
+            Cart is empty
+        </div>
+    </div>
     <script type="module" src="assets/js/app.js"></script>
 </body>
 </html>
