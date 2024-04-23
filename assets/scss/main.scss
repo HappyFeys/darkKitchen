@@ -1,15 +1,20 @@
 @import "./reset.scss"; // les resets
 @import "./config.scss"; // les variables
 @import "./panier.scss"; //le panier
-@import "./card.scss"; //les cards générés en JS
 
 
 body{
     font-family: $nunito;
-    article {
-        border: 2px solid black;
-        margin-bottom: 3%;
-        margin-top: 5%;
-      }
+    main{
+        width: 85%;
+        margin: auto;
+        article {
+            border: 2px solid black;
+            margin-bottom: 3%;
+            margin-top: 5%;
+          }
+
+    }
+    
 }
 

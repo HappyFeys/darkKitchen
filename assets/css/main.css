@@ -7,7 +7,11 @@
 body {
   font-family: "Nunito", sans-serif;
 }
-body article {
+body main {
+  width: 85%;
+  margin: auto;
+}
+body main article {
   border: 2px solid black;
   margin-bottom: 3%;
   margin-top: 5%;
