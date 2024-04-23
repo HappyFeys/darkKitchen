@@ -17,9 +17,6 @@ const mainComponent = () => {
     articleTitle.textContent = produit.nom;
     articleImage.style.backgroundImage = `url(${produit.img})`;
 
-    
-
-
     articles.appendChild(articleImage);
     articles.appendChild(articleTitle);
     //ajout des articles dans la main
@@ -45,9 +42,20 @@ const mainComponent = () => {
     articleDataContainer.appendChild(articlePrepTime);
 
     let articleCategorie = document.createElement('h4');
-    articleCategorie.innerText = `${produit.categorie}`;
+    articleCategorie.innerText = `${produit.categorie.charAt(0).toUpperCase() + produit.categorie.slice(1)}`;
     articleCategorie.className = "articles__data-container__categorie";
     articleDataContainer.appendChild(articleCategorie);
+
+    let articleIngredientsContainer = document.createElement('div');
+    articleIngredientsContainer.className = "articles__data-container__ingredients-container";
+    articleDataContainer.appendChild(articleIngredientsContainer);
+
+    for (const ingredient of produits[i].ingredients) {
+        let ingredientElement = document.createElement('h5');
+        ingredientElement.className = "ingredients-container__ingredient";
+        ingredientElement.innerHTML = ingredient.charAt(0).toUpperCase() + ingredient.slice(1);
+        articleIngredientsContainer.appendChild(ingredientElement);
+    }
 
   }
 };
