@@ -16,7 +16,6 @@ body{
             margin-top: 5%;
             box-shadow: $shadow;
             background-color: white;
-            position: relative;
 
             .picture-div{
                 height: 200px;
@@ -26,6 +25,33 @@ body{
                 border-top-left-radius: 20px;
                 border-top-right-radius: 20px;
                 margin-bottom: 2%;
+                position: relative;
+
+                &:hover>.buy-btn-container {
+                    opacity: 100;
+                    transition: opacity ease-in-out 300ms, backdrop-filter ease-in-out 300ms;
+                    backdrop-filter: blur(3px);
+                }
+
+                .buy-btn-container {
+                    position: absolute;
+                    opacity: 0;
+                    top: 0;
+                    left: 0;
+                    right: 0;
+                    bottom: 0;
+                    margin: auto;
+                    height: 100%;
+                    transition: opacity ease-in-out 300ms, backdrop-filter ease-in-out 300ms;
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+
+                    button {
+                        
+                    }
+
+                }
             
             }
 

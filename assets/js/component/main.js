@@ -25,6 +25,16 @@ const mainComponent = () => {
     articleDataContainer.className = "articles__data-container";
     articles.appendChild(articleDataContainer);
 
+    let buyButtonContainer = document.createElement('div');
+    buyButtonContainer.className = "buy-btn-container";
+    articleImage.appendChild(buyButtonContainer);
+
+    let absoluteButton = document.createElement('button');
+    absoluteButton.setAttribute('id', `buy-btn-${produit.id}`);
+    absoluteButton.innerText = "Ajouter au panier";
+    absoluteButton.className = "buy-btn";
+    buyButtonContainer.appendChild(absoluteButton);
+
     articleDataContainer.appendChild(articleTitle);
 
 
@@ -63,7 +73,6 @@ const mainComponent = () => {
         ingredientElement.innerHTML = ingredient.charAt(0).toUpperCase() + ingredient.slice(1);
         articleIngredientsContainer.appendChild(ingredientElement);
     }
-
   }
 };
 
