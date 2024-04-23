@@ -2,7 +2,7 @@ const articles = {
         "sashimi": [
           {
             nom: "Sashimi de saumon",
-            img: "sashimi_saumon.jpg",
+            img: "./assets/images/sashimis/sashimi-saumon.jpg",
             prix: 15,
             note: 4.5,
             temps_prepa: 10,
@@ -11,7 +11,7 @@ const articles = {
           },
           {
             nom: "Sashimi de thon",
-            img: "sashimi_thon.jpg",
+            img: "./assets/images/sashimis/sashimi-thon.jpg",
             prix: 18,
             note: 4.7,
             temps_prepa: 12,
@@ -20,7 +20,7 @@ const articles = {
           },
           {
             nom: "Sashimi de dorade",
-            img: "sashimi_dorade.jpg",
+            img: "./assets/images/sashimis/sashimi-dorade.jpg",
             prix: 16,
             note: 4.3,
             temps_prepa: 11,
@@ -29,7 +29,7 @@ const articles = {
           },
           {
             nom: "Sashimi de maquereau",
-            img: "sashimi_maquereau.jpg",
+            img: "./assets/images/sashimis/sashimi-maquereau.png",
             prix: 14,
             note: 4.1,
             temps_prepa: 9,
@@ -38,7 +38,7 @@ const articles = {
           },
           {
             nom: "Sashimi de bar",
-            img: "sashimi_bar.jpg",
+            img: "./assets/images/sashimis/sashimi-Bar.jpg",
             prix: 17,
             note: 4.6,
             temps_prepa: 13,
@@ -47,7 +47,7 @@ const articles = {
           },
           {
             nom: "Sashimi de coquille Saint-Jacques",
-            img: "sashimi_saintjacques.jpg",
+            img: "./assets/images/sashimis/sashimi-saint-jacques.jpg",
             prix: 20,
             note: 4.8,
             temps_prepa: 14,
@@ -56,7 +56,7 @@ const articles = {
           },
           {
             nom: "Sashimi de carpe",
-            img: "sashimi_carpe.jpg",
+            img: "./assets/images/sashimis/sashimi-carpe.jpg",
             prix: 15,
             note: 4.2,
             temps_prepa: 10,
@@ -65,7 +65,7 @@ const articles = {
           },
           {
             nom: "Sashimi de sole",
-            img: "sashimi_sole.jpg",
+            img: "./assets/images/sashimis/sashimi-sole.jpg",
             prix: 19,
             note: 4.9,
             temps_prepa: 12,
@@ -74,7 +74,7 @@ const articles = {
           },
           {
             nom: "Sashimi de mulet",
-            img: "sashimi_mulet.jpg",
+            img: "./assets/images/sashimis/sashimi-mulet.jpg",
             prix: 13,
             note: 4.0,
             temps_prepa: 8,
@@ -83,7 +83,7 @@ const articles = {
           },
           {
             nom: "Sashimi de turbot",
-            img: "sashimi_turbot.jpg",
+            img: "./assets/images/sashimis/sashimi-turbot.jpg",
             prix: 18,
             note: 4.5,
             temps_prepa: 11,
@@ -94,7 +94,7 @@ const articles = {
         "sushi": [
           {
             nom: "Sushi au saumon",
-            img: "sushi_saumon.jpg",
+            img: "./assets/images/sushis/sushi-saumon.jpg",
             prix: 12,
             note: 4.4,
             temps_prepa: 15,
@@ -103,7 +103,7 @@ const articles = {
           },
           {
             nom: "Sushi au thon",
-            img: "sushi_thon.jpg",
+            img: "./assets/images/sushis/sushi-thon.jpg",
             prix: 14,
             note: 4.6,
             temps_prepa: 16,
@@ -112,7 +112,7 @@ const articles = {
           },
           {
             nom: "Sushi à la crevette",
-            img: "sushi_crevette.jpg",
+            img: "./assets/images/sushis/sushi-crevette.jpg",
             prix: 11,
             note: 4.3,
             temps_prepa: 14,
@@ -121,7 +121,7 @@ const articles = {
           },
           {
             nom: "Sushi à l'anguille",
-            img: "sushi_anguille.jpg",
+            img: "./assets/images/sushis/sushi-anguilles.jpg",
             prix: 20,
             note: 4.8,
             temps_prepa: 18,
@@ -130,7 +130,7 @@ const articles = {
           },
           {
             nom: "Sushi végétarien",
-            img: "sushi_vegetarien.jpg",
+            img: "./assets/images/sushis/sushi-vege.jpeg",
             prix: 10,
             note: 4.0,
             temps_prepa: 12,
@@ -139,7 +139,7 @@ const articles = {
           },
           {
             nom: "Sushi au maquereau",
-            img: "sushi_maquereau.jpg",
+            img: "./assets/images/sushis/sushi-maquereau.jpg",
             prix: 13,
             note: 4.2,
             temps_prepa: 15,
@@ -148,7 +148,7 @@ const articles = {
           },
           {
             nom: "Sushi au poulpe",
-            img: "sushi_poulpe.jpg",
+            img: "./assets/images/sushis/sushi-poulpe.jpg",
             prix: 16,
             note: 4.5,
             temps_prepa: 17,
@@ -157,7 +157,7 @@ const articles = {
           },
           {
             nom: "Sushi au crabe",
-            img: "sushi_crabe.jpg",
+            img: "./assets/images/sushis/sushi-crabe.jpg",
             prix: 15,
             note: 4.4,
             temps_prepa: 16,
@@ -166,7 +166,7 @@ const articles = {
           },
           {
             nom: "Sushi au saumon et avocat",
-            img: "sushi_saumon_avocat.jpg",
+            img: "./assets/images/sushis/sushi-saumon-avocat.png",
             prix: 17,
             note: 4.7,
             temps_prepa: 15,
@@ -175,7 +175,7 @@ const articles = {
           },
           {
             nom: "Sushi au thon et ciboulette",
-            img: "sushi_thon_ciboulette.jpg",
+            img: "./assets/images/sushis/sushi-thon.jpg",
             prix: 18,
             note: 4.9,
             temps_prepa: 17,
@@ -186,7 +186,7 @@ const articles = {
         "maki": [
           {
             nom: "Maki au thon",
-            img: "maki_thon.jpg",
+            img: "./assets/images/makis/maki-thon.jpg",
             prix: 10,
             note: 4.2,
             temps_prepa: 20,
@@ -195,7 +195,7 @@ const articles = {
           },
           {
             nom: "Maki au saumon",
-            img: "maki_saumon.jpg",
+            img: "./assets/images/makis/maki-saumon.jpeg",
             prix: 12,
             note: 4.4,
             temps_prepa: 22,
@@ -204,7 +204,7 @@ const articles = {
           },
           {
             nom: "Maki au crabe",
-            img: "maki_crabe.jpg",
+            img: "./assets/images/makis/maki-crabe.jpg",
             prix: 11,
             note: 4.3,
             temps_prepa: 21,
@@ -213,7 +213,7 @@ const articles = {
           },
           {
             nom: "Maki végétarien",
-            img: "maki_vegetarien.jpg",
+            img: "./assets/images/makis/makis-vege.jpeg",
             prix: 9,
             note: 4.0,
             temps_prepa: 18,
@@ -222,7 +222,7 @@ const articles = {
           },
           {
             nom: "Maki au maquereau",
-            img: "maki_maquereau.jpg",
+            img: "./assets/images/makis/maki-maquereau.jpg",
             prix: 13,
             note: 4.1,
             temps_prepa: 23,
@@ -231,7 +231,7 @@ const articles = {
           },
           {
             nom: "Maki au poulpe",
-            img: "maki_poulpe.jpg",
+            img: "./assets/images/makis/maki-poulpe.jpg",
             prix: 14,
             note: 4.5,
             temps_prepa: 24,
@@ -240,7 +240,7 @@ const articles = {
           },
           {
             nom: "Maki au concombre",
-            img: "maki_concombre.jpg",
+            img: "./assets/images/makis/maki-concombre.jpg",
             prix: 8,
             note: 3.8,
             temps_prepa: 17,
@@ -249,7 +249,7 @@ const articles = {
           },
           {
             nom: "Maki au fromage",
-            img: "maki_fromage.jpg",
+            img: "./assets/images/makis/maki-fromage.jpg",
             prix: 10,
             note: 4.2,
             temps_prepa: 19,
@@ -258,7 +258,7 @@ const articles = {
           },
           {
             nom: "Maki au saumon et avocat",
-            img: "maki_saumon_avocat.jpg",
+            img: "./assets/images/makis/maki-saumon-avocat.jpg",
             prix: 15,
             note: 4.7,
             temps_prepa: 22,
@@ -267,7 +267,7 @@ const articles = {
           },
           {
             nom: "Maki au thon épicé",
-            img: "maki_thon_epice.jpg",
+            img: "./assets/images/makis/maki-épicé.jpg",
             prix: 12,
             note: 4.4,
             temps_prepa: 21,
@@ -278,7 +278,7 @@ const articles = {
         "bento": [
           {
             nom: "Bento teriyaki",
-            img: "bento_teriyaki.jpg",
+            img: "./assets/images/bentos/teriyaki.jpg",
             prix: 20,
             note: 4.8,
             temps_prepa: 25,
@@ -287,7 +287,7 @@ const articles = {
           },
           {
             nom: "Bento sashimi",
-            img: "bento_sashimi.jpg",
+            img: "./assets/images/bentos/sashimi.jpg",
             prix: 22,
             note: 4.7,
             temps_prepa: 23,
@@ -296,7 +296,7 @@ const articles = {
           },
           {
             nom: "Bento végétarien",
-            img: "bento_vegetarien.jpg",
+            img: "./assets/images/bentos/vege.jpg",
             prix: 18,
             note: 4.5,
             temps_prepa: 20,
@@ -305,7 +305,7 @@ const articles = {
           },
           {
             nom: "Bento katsu",
-            img: "bento_katsu.jpg",
+            img: "./assets/images/bentos/kastu.jpg",
             prix: 21,
             note: 4.9,
             temps_prepa: 26,
@@ -314,7 +314,7 @@ const articles = {
           },
           {
             nom: "Bento tempura",
-            img: "bento_tempura.jpg",
+            img: "./assets/images/bentos/tempura.png",
             prix: 19,
             note: 4.6,
             temps_prepa: 24,
@@ -323,7 +323,7 @@ const articles = {
           },
           {
             nom: "Bento yakitori",
-            img: "bento_yakitori.jpg",
+            img: "./assets/images/bentos/Yakitori.jpg",
             prix: 23,
             note: 4.7,
             temps_prepa: 27,
@@ -332,7 +332,7 @@ const articles = {
           },
           {
             nom: "Bento sushi",
-            img: "bento_sushi.jpg",
+            img: "./assets/images/bentos/sushi.jpg",
             prix: 24,
             note: 4.8,
             temps_prepa: 28,
@@ -341,7 +341,7 @@ const articles = {
           },
           {
             nom: "Bento chirashi",
-            img: "bento_chirashi.jpg",
+            img: "./assets/images/bentos/chirashi.jpg",
             prix: 25,
             note: 4.9,
             temps_prepa: 29,
@@ -350,7 +350,7 @@ const articles = {
           },
           {
             nom: "Bento tonkatsu",
-            img: "bento_tonkatsu.jpg",
+            img: "./assets/images/bentos/tonkatsu.jpg",
             prix: 26,
             note: 4.8,
             temps_prepa: 30,
@@ -359,7 +359,7 @@ const articles = {
           },
           {
             nom: "Bento california",
-            img: "bento_california.jpg",
+            img: "./assets/images/bentos/california.jpg",
             prix: 22,
             note: 4.7,
             temps_prepa: 26,
@@ -370,7 +370,7 @@ const articles = {
         "autres": [
           {
             nom: "Tempura de crevettes",
-            img: "tempura_crevettes.jpg",
+            img: "./assets/images/autres/tempura-crevettes.jpg",
             prix: 16,
             note: 4.6,
             temps_prepa: 18,
@@ -379,7 +379,7 @@ const articles = {
           },
           {
             nom: "Gyoza",
-            img: "gyoza.jpg",
+            img: "./assets/images/autres/gyoza.jpg",
             prix: 14,
             note: 4.4,
             temps_prepa: 16,
@@ -388,7 +388,7 @@ const articles = {
           },
           {
             nom: "Edamame",
-            img: "edamame.jpg",
+            img: "./assets/images/autres/edamame.jpg",
             prix: 8,
             note: 4.0,
             temps_prepa: 10,
@@ -397,7 +397,7 @@ const articles = {
           },
           {
             nom: "Takoyaki",
-            img: "takoyaki.jpg",
+            img: "./assets/images/autres/takoyaki.jpg",
             prix: 15,
             note: 4.5,
             temps_prepa: 17,
@@ -406,7 +406,7 @@ const articles = {
           },
           {
             nom: "Sashimi de daurade",
-            img: "sashimi_daurade.jpg",
+            img: "./assets/images/autres/sashimi-daurade.jpg",
             prix: 17,
             note: 4.7,
             temps_prepa: 19,
@@ -415,7 +415,7 @@ const articles = {
           },
           {
             nom: "Yakitori",
-            img: "yakitori.jpg",
+            img: "./assets/images/autres/yakitori.jpg",
             prix: 12,
             note: 4.3,
             temps_prepa: 14,
@@ -424,7 +424,7 @@ const articles = {
           },
           {
             nom: "Karaage",
-            img: "karaage.jpg",
+            img: "./assets/images/autres/karaage.jpg",
             prix: 13,
             note: 4.4,
             temps_prepa: 15,
@@ -433,7 +433,7 @@ const articles = {
           },
           {
             nom: "Chawanmushi",
-            img: "chawanmushi.jpg",
+            img: "./assets/images/autres/Chawanmushi.jpg",
             prix: 16,
             note: 4.6,
             temps_prepa: 18,
@@ -442,7 +442,7 @@ const articles = {
           },
           {
             nom: "Onigiri",
-            img: "onigiri.jpg",
+            img: "./assets/images/autres/onigiri.jpg",
             prix: 9,
             note: 4.1,
             temps_prepa: 11,
@@ -451,7 +451,7 @@ const articles = {
           },
           {
             nom: "Miso",
-            img: "miso.jpg",
+            img: "./assets/images/autres/Miso.jpg",
             prix: 7,
             note: 3.9,
             temps_prepa: 10,
