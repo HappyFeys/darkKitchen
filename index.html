@@ -5,8 +5,71 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="main.css">
     <title>Dark Kitchen</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200..1000;1,200..1000&display=swap" rel="stylesheet">
 </head>
 <body>
+    <header>
+        <nav>
+            <!-- Navigation -->
+            <img id="nav--btnHamburger" src="" alt="Hamburger Menu">
+            <ul>
+                <li><a href="#about">About</a></li>
+                <li><a href="#menu">Menu</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+            <img id="nav__iconPanier" src="" alt="Mon panier">
+        </nav>
+        <h1>Découvre de nouvelle expérience culinaire</h1>
+        <div class="searchBar">
+            <!-- barre de recherche -->
+            <img id="searchBar__btnSearch" alt="icon Pour Recherche"><input type="text" placeholder="Recherche un plat..."><img id="searchBar__btnFilter" src="" alt="Bouton du filtre">
+        </div>
+    </header>
+
+    <main>
+        <div id="home">
+            <div>
+                <h2>Notre menu</h2>
+                <a href="#">Tout voir</a>
+            </div>
+            <div id="home__menu">
+                <!-- JavaScript -->
+            </div>
+        </div>
+        <div id="cart">
+            <!-- l'id cart va afficher le contenu du panier (va afficher le pop-up) -->
+            <img id="cart__btnPrevious" src="" alt="retour en arrière">
+            <div id="cart__orderNumber">
+             <!-- JavaScript -->   
+            </div>
+            <div id="cart__orderList">
+             <!-- JavaScript -->
+            </div>
+            <hr>
+            <div id="cart__orderTotal">
+             <!-- JavaScript -->
+            </div>
+            <button>Commander et payer</button>
+            
+        </div>
+    </main>
+    
+    <footer>
+        <div class="footer-links">
+            <ul>
+                <li><a href="#legal">Mentions Légales</a></li>
+                <li><a href="#conditions-vente">Conditions de Vente</a></li>
+                <li><a href="#conditions-livraison">Conditions de Livraison</a></li>
+                <li><a href="#social-media">Réseaux Sociaux</a></li>
+            </ul>
+        </div>
+        <div class="logo">
+            <!-- le logo -->
+            <img src="logo.png" alt="Dark Kitchen Logo">
+        </div>
+    </footer>
     <script type="module" src="assets/js/app.js"></script>
 </body>
 </html>
