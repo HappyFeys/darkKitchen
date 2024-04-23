@@ -1,5 +1,9 @@
 const cartComponent = () => {
+<<<<<<< HEAD
 
+=======
+let cart = [];
+>>>>>>> manu
 
 }
 
