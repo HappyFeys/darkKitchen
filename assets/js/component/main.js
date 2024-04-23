@@ -6,28 +6,25 @@ produits;
 
 const mainComponent = () => {
     let main = document.querySelector('main');
-    for (const type in produits) {
-        if (produits.hasOwnProperty(type)) {
-            produits[type].forEach(produit => {
-                //creation de l'html
-                let article = document.createElement('article');
+   for (let i = 0; i < produits.length; i++) {
+    const produit = produits[i];
 
-                //ajout de l'image dans la carte
-                let articleImage = document.createElement('div');
-                articleImage.style.backgroundImage = `url(${produit.image})`; 
+    //creation des cartes articles
+    let articles = document.createElement('article');
+    let articleTitle = document.createElement('h2');
+    let articleImage = document.createElement('div');
+    articleImage.classList.add('picture-div');
 
-                //ajout du titre dans la carte
-                let articleTitle = document.createElement('h2');
-                articleTitle.textContent = produit.nom;
-                
-                
-                article.appendChild(articleImage);
-                article.appendChild(articleTitle);
-                
-                main.appendChild(article);
-            });
-        }
-    }
+    //Ajout des données dans la carte
+    articleTitle.textContent = produit.nom;
+    articleImage.style.backgroundImage = `url(${produit.img})`;
+
+    articles.appendChild(articleImage);
+    articles.appendChild(articleTitle);
+    //ajout des articles dans la main
+    main.appendChild(articles);
+    
+   }
 
 }
 

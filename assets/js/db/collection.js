@@ -1,5 +1,4 @@
-const articles = {
-        "sashimi": [
+const articles = [
           {
             nom: "Sashimi de saumon",
             img: "sashimi_saumon.jpg",
@@ -89,9 +88,8 @@ const articles = {
             temps_prepa: 11,
             categorie: "sashimi",
             ingredients: ["turbot", "orange", "poivre"]
-          }
-        ],
-        "sushi": [
+          },
+        
           {
             nom: "Sushi au saumon",
             img: "sushi_saumon.jpg",
@@ -181,9 +179,8 @@ const articles = {
             temps_prepa: 17,
             categorie: "sushi",
             ingredients: ["thon", "ciboulette", "riz"]
-          }
-        ],
-        "maki": [
+          },
+        
           {
             nom: "Maki au thon",
             img: "maki_thon.jpg",
@@ -273,9 +270,7 @@ const articles = {
             temps_prepa: 21,
             categorie: "maki",
             ingredients: ["thon", "sauce épicée", "riz"]
-          }
-        ],
-        "bento": [
+          },
           {
             nom: "Bento teriyaki",
             img: "bento_teriyaki.jpg",
@@ -365,9 +360,7 @@ const articles = {
             temps_prepa: 26,
             categorie: "bento",
             ingredients: ["crabe", "avocat", "concombre"]
-          }
-        ],
-        "autres": [
+          },
           {
             nom: "Tempura de crevettes",
             img: "tempura_crevettes.jpg",
@@ -459,7 +452,6 @@ const articles = {
             ingredients: ["pâte miso", "eau", "tofu"]
           }
         ]
-      }
 
 
 
