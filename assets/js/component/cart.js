@@ -1,5 +1,5 @@
 const cartComponent = () => {
-
+let cart = [];
 
 }
 
