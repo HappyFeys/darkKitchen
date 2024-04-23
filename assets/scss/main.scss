@@ -5,13 +5,80 @@
 
 body{
     font-family: $nunito;
+    background-color: aliceblue;
     main{
         width: 85%;
         margin: auto;
         article {
-            border: 2px solid black;
+            border: 1px solid black;
+            border-radius: 20px;
             margin-bottom: 3%;
             margin-top: 5%;
+            box-shadow: $shadow;
+            background-color: white;
+            position: relative;
+
+            .picture-div{
+                height: 200px;
+                background-size: cover;
+                background-repeat: no-repeat;
+                background-position: center;
+                border-top-left-radius: 20px;
+                border-top-right-radius: 20px;
+                margin-bottom: 2%;
+            
+            }
+
+            .articles__data-container{
+                padding: 16px;
+                display: flex;
+                flex-direction: column;
+                gap: 10px;
+
+                h2{
+                    font-size: 24px;
+                    font-weight: 600;
+                    color: $darkBlue;
+                }
+
+                &__price{
+                    font-size: 20px;
+                    font-weight: 500;
+                }
+                &__info-container{
+                    display: flex;
+                    flex-direction: row;
+                    justify-content: space-evenly;
+                    margin-bottom: 5%;
+
+                    h4{
+                        font-size: 14px;
+                        font-weight: 400;
+                        text-align: center;
+                        width: 25%;
+                        color: aliceblue;
+                        background-color: $darkBlue;
+                        border-radius: 15px;
+                        padding: 5px 3px;
+                    }
+                }
+                &__ingredients-container{
+                    display: flex;
+                    flex-direction: row;
+                    place-self: end;
+                    justify-content: end;
+                    gap: 15px;
+
+                    &__ingredient{
+                        background-color: $lime;
+                        border-radius: 10px;
+                        padding: 5px 3px;
+
+                    }
+
+                    
+                }
+            }
           }
 
     }

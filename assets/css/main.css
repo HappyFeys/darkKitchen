@@ -6,13 +6,70 @@
 
 body {
   font-family: "Nunito", sans-serif;
+  background-color: aliceblue;
 }
 body main {
   width: 85%;
   margin: auto;
 }
 body main article {
-  border: 2px solid black;
+  border: 1px solid black;
+  border-radius: 20px;
   margin-bottom: 3%;
   margin-top: 5%;
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+  background-color: white;
+  position: relative;
+}
+body main article .picture-div {
+  height: 200px;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  border-top-left-radius: 20px;
+  border-top-right-radius: 20px;
+  margin-bottom: 2%;
+}
+body main article .articles__data-container {
+  padding: 16px;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+body main article .articles__data-container h2 {
+  font-size: 24px;
+  font-weight: 600;
+  color: #254160;
+}
+body main article .articles__data-container__price {
+  font-size: 20px;
+  font-weight: 500;
+}
+body main article .articles__data-container__info-container {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  margin-bottom: 5%;
+}
+body main article .articles__data-container__info-container h4 {
+  font-size: 14px;
+  font-weight: 400;
+  text-align: center;
+  width: 25%;
+  color: aliceblue;
+  background-color: #254160;
+  border-radius: 15px;
+  padding: 5px 3px;
+}
+body main article .articles__data-container__ingredients-container {
+  display: flex;
+  flex-direction: row;
+  place-self: end;
+  justify-content: end;
+  gap: 15px;
+}
+body main article .articles__data-container__ingredients-container__ingredient {
+  background-color: #C1C603;
+  border-radius: 10px;
+  padding: 5px 3px;
 }/*# sourceMappingURL=main.css.map */
