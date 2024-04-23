@@ -8,6 +8,26 @@ body {
   font-family: "Nunito", sans-serif;
   background-color: aliceblue;
 }
+body header {
+  width: 95%;
+  margin: auto;
+}
+body header .upper-nav-btns {
+  margin-top: 2%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+body header ul {
+  display: none;
+}
+body header h1 {
+  font-size: 40px;
+  font-weight: 600;
+  text-align: center;
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
 body main {
   width: 85%;
   margin: auto;
@@ -54,6 +74,20 @@ body main article .picture-div .buy-btn-container {
   justify-content: center;
   align-items: center;
 }
+body main article .picture-div .buy-btn-container button {
+  font-family: "Nunito", sans-serif;
+  font-size: 20px;
+  padding: 5px 8px;
+  border-radius: 10px;
+  background-color: #C1C603;
+  color: aliceblue;
+  border: 0;
+  transition: background-color ease-in-out 300ms;
+}
+body main article .picture-div .buy-btn-container button:hover {
+  background-color: #82860d;
+  transition: background-color ease-in-out 300ms;
+}
 body main article .articles__data-container {
   padding: 16px;
   display: flex;
@@ -96,4 +130,18 @@ body main article .articles__data-container__ingredients-container__ingredient {
   background-color: #C1C603;
   border-radius: 10px;
   padding: 5px 3px;
+}
+
+@media screen and (min-width: 1500px) {
+  main {
+    display: grid;
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+    gap: 10px;
+  }
+  main section {
+    display: flex !important;
+  }
+  #home .home__our-menu {
+    grid-column: span 3/span 3;
+  }
 }/*# sourceMappingURL=main.css.map */

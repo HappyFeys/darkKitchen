@@ -3,111 +3,160 @@
 @import "./panier.scss"; //le panier
 
 
-body{
-    font-family: $nunito;
-    background-color: aliceblue;
-    main{
-        width: 85%;
-        margin: auto;
-        article {
-            border: 1px solid black;
-            border-radius: 20px;
-            margin-bottom: 3%;
-            margin-top: 5%;
-            box-shadow: $shadow;
-            background-color: white;
+body {
+  font-family: $nunito;
+  background-color: aliceblue;
 
-            .picture-div{
-                height: 200px;
-                background-size: cover;
-                background-repeat: no-repeat;
-                background-position: center;
-                border-top-left-radius: 20px;
-                border-top-right-radius: 20px;
-                margin-bottom: 2%;
-                position: relative;
+  header {
+    width: 95%;
+    margin: auto;
+    .upper-nav-btns {
+      margin-top: 2%;
+      display: flex;
+      flex-direction: row;
+      justify-content: space-between;
+    }
 
-                &:hover>.buy-btn-container {
-                    opacity: 100;
-                    transition: opacity ease-in-out 300ms, backdrop-filter ease-in-out 300ms;
-                    backdrop-filter: blur(3px);
-                }
+    ul {
+      display: none;
+    }
 
-                .buy-btn-container {
-                    position: absolute;
-                    opacity: 0;
-                    top: 0;
-                    left: 0;
-                    right: 0;
-                    bottom: 0;
-                    margin: auto;
-                    height: 100%;
-                    transition: opacity ease-in-out 300ms, backdrop-filter ease-in-out 300ms;
-                    display: flex;
-                    justify-content: center;
-                    align-items: center;
+    h1 {
+      font-size: 40px;
+      font-weight: 600;
+      text-align: center;
+      margin-top: 20px;
+      margin-bottom: 20px;
+    }
+  }
+  main {
+    width: 85%;
+    margin: auto;
+    article {
+      border: 1px solid black;
+      border-radius: 20px;
+      margin-bottom: 3%;
+      margin-top: 5%;
+      box-shadow: $shadow;
+      background-color: white;
 
-                    button {
-                        
-                    }
+      .picture-div {
+        height: 200px;
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-position: center;
+        border-top-left-radius: 20px;
+        border-top-right-radius: 20px;
+        margin-bottom: 2%;
+        position: relative;
 
-                }
-            
-            }
+        &:hover > .buy-btn-container {
+          opacity: 100;
+          transition: opacity ease-in-out 300ms,
+            backdrop-filter ease-in-out 300ms;
+          backdrop-filter: blur(3px);
+        }
 
-            .articles__data-container{
-                padding: 16px;
-                display: flex;
-                flex-direction: column;
-                gap: 10px;
+        .buy-btn-container {
+          position: absolute;
+          opacity: 0;
+          top: 0;
+          left: 0;
+          right: 0;
+          bottom: 0;
+          margin: auto;
+          height: 100%;
+          transition: opacity ease-in-out 300ms,
+            backdrop-filter ease-in-out 300ms;
+          display: flex;
+          justify-content: center;
+          align-items: center;
 
-                h2{
-                    font-size: 24px;
-                    font-weight: 600;
-                    color: $darkBlue;
-                }
+          button {
+            font-family: $nunito;
+            font-size: 20px;
+            padding: 5px 8px;
+            border-radius: 10px;
+            background-color: $lime;
+            color: aliceblue;
+            border: 0;
+            transition: background-color ease-in-out 300ms;
 
-                &__price{
-                    font-size: 20px;
-                    font-weight: 500;
-                }
-                &__info-container{
-                    display: flex;
-                    flex-direction: row;
-                    justify-content: space-evenly;
-                    margin-bottom: 5%;
-
-                    h4{
-                        font-size: 14px;
-                        font-weight: 400;
-                        text-align: center;
-                        width: 25%;
-                        color: aliceblue;
-                        background-color: $darkBlue;
-                        border-radius: 15px;
-                        padding: 5px 3px;
-                    }
-                }
-                &__ingredients-container{
-                    display: flex;
-                    flex-direction: row;
-                    place-self: end;
-                    justify-content: end;
-                    gap: 15px;
-
-                    &__ingredient{
-                        background-color: $lime;
-                        border-radius: 10px;
-                        padding: 5px 3px;
-
-                    }
-
-                    
-                }
+            &:hover {
+              background-color: #82860d;
+              transition: background-color ease-in-out 300ms;
             }
           }
+        }
+      }
 
+      .articles__data-container {
+        padding: 16px;
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+
+        h2 {
+          font-size: 24px;
+          font-weight: 600;
+          color: $darkBlue;
+        }
+
+        &__price {
+          font-size: 20px;
+          font-weight: 500;
+        }
+        &__info-container {
+          display: flex;
+          flex-direction: row;
+          justify-content: space-evenly;
+          margin-bottom: 5%;
+
+          h4 {
+            font-size: 14px;
+            font-weight: 400;
+            text-align: center;
+            width: 25%;
+            color: aliceblue;
+            background-color: $darkBlue;
+            border-radius: 15px;
+            padding: 5px 3px;
+          }
+        }
+        &__ingredients-container {
+          display: flex;
+          flex-direction: row;
+          place-self: end;
+          justify-content: end;
+          gap: 15px;
+
+          &__ingredient {
+            background-color: $lime;
+            border-radius: 10px;
+            padding: 5px 3px;
+          }
+        }
+      }
     }
-    
+  }
 }
 
+@media screen and (min-width: 1500px) {
+    main {
+        display: grid;
+        grid-template-columns: repeat(3, minmax(0, 1fr));
+        gap: 10px;
+
+        section {
+            display: flex !important;
+        }
+    }
+
+    #home {
+        .home__our-menu {
+            grid-column: span 3 / span 3;
+        }
+
+
+    }
+}
