@@ -1,12 +1,6 @@
 const cartComponent = () => {
-<<<<<<< HEAD
-
-=======
-let cart = [];
->>>>>>> manu
-
-}
+  let cart = [];
+};
 
 //Pour importer dans app.js
-export default cartComponent
-;
+export default cartComponent;
