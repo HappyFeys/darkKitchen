@@ -10,46 +10,66 @@
     <link href="https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200..1000;1,200..1000&display=swap" rel="stylesheet">
 </head>
 <body>
-    <div class="container">
-        <h1>Dark Kitchen - Menu</h1>
-        
-        <div class="dark-mode-toggle">
-            <label for="dark-mode-switch">Dark Mode:</label>
-            <input type="checkbox" id="dark-mode-switch">
+    <header>
+        <nav>
+            <!-- Navigation -->
+            <img id="nav--btnHamburger" src="" alt="Hamburger Menu">
+            <ul>
+                <li><a href="#about">About</a></li>
+                <li><a href="#menu">Menu</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+            <img id="nav__iconPanier" src="" alt="Mon panier">
+        </nav>
+        <h1>Découvre de nouvelle expérience culinaire</h1>
+        <div class="searchBar">
+            <!-- barre de recherche -->
+            <img id="searchBar__btnSearch" alt="icon Pour Recherche"><input type="text" placeholder="Recherche un plat..."><img id="searchBar__btnFilter" src="" alt="Bouton du filtre">
         </div>
+    </header>
 
-        <div class="card">
-            <h2 class="category">Vegan</h2>
-            <div class="dish">
-                <h3>Tofu Stir Fry</h3>
-                <p>$10.99</p>
-                <button onclick="addToCart('Tofu Stir Fry', 10.99)">Add to Cart</button>
+    <main>
+        <div id="home">
+            <div>
+                <h2>Notre menu</h2>
+                <a href="#">Tout voir</a>
             </div>
-            <div class="dish">
-                <h3>Quinoa Salad</h3>
-                <p>$8.99</p>
-                <button onclick="addToCart('Quinoa Salad', 8.99)">Add to Cart</button>
+            <div id="home__menu">
+                <!-- JavaScript -->
             </div>
         </div>
-
-        <div class="card">
-            <h2 class="category">Comfort Food</h2>
-            <div class="dish">
-                <h3>Mac 'n' Cheese</h3>
-                <p>$12.99</p>
-                <button onclick="addToCart('Mac \'n\' Cheese', 12.99)">Add to Cart</button>
+        <div id="cart">
+            <!-- l'id cart va afficher le contenu du panier (va afficher le pop-up) -->
+            <img id="cart__btnPrevious" src="" alt="retour en arrière">
+            <div id="cart__orderNumber">
+             <!-- JavaScript -->   
             </div>
-            <div class="dish">
-                <h3>Chicken Pot Pie</h3>
-                <p>$14.99</p>
-                <button onclick="addToCart('Chicken Pot Pie', 14.99)">Add to Cart</button>
+            <div id="cart__orderList">
+             <!-- JavaScript -->
             </div>
+            <hr>
+            <div id="cart__orderTotal">
+             <!-- JavaScript -->
+            </div>
+            <button>Commander et payer</button>
+            
         </div>
-
-        <div id="cart" class="cart">
-            Cart is empty
+    </main>
+    
+    <footer>
+        <div class="footer-links">
+            <ul>
+                <li><a href="#legal">Mentions Légales</a></li>
+                <li><a href="#conditions-vente">Conditions de Vente</a></li>
+                <li><a href="#conditions-livraison">Conditions de Livraison</a></li>
+                <li><a href="#social-media">Réseaux Sociaux</a></li>
+            </ul>
         </div>
-    </div>
+        <div class="logo">
+            <!-- le logo -->
+            <img src="logo.png" alt="Dark Kitchen Logo">
+        </div>
+    </footer>
     <script type="module" src="assets/js/app.js"></script>
 </body>
 </html>
