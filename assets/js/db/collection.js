@@ -408,7 +408,7 @@ const articles = [
             prix: 16,
             note: 4.6,
             temps_prepa: 18,
-            categorie: "autres",
+            categorie: "autre",
             ingredients: ["crevettes", "pâte", "sauce"]
           },
           {
@@ -418,7 +418,7 @@ const articles = [
             prix: 14,
             note: 4.4,
             temps_prepa: 16,
-            categorie: "autres",
+            categorie: "autre",
             ingredients: ["porc", "légumes", "pâte"]
           },
           {
@@ -428,7 +428,7 @@ const articles = [
             prix: 8,
             note: 4.0,
             temps_prepa: 10,
-            categorie: "autres",
+            categorie: "autre",
             ingredients: ["soja", "sel"]
           },
           {
@@ -438,7 +438,7 @@ const articles = [
             prix: 15,
             note: 4.5,
             temps_prepa: 17,
-            categorie: "autres",
+            categorie: "autre",
             ingredients: ["poulpe", "pâte", "sauce"]
           },
           {
@@ -448,7 +448,7 @@ const articles = [
             prix: 17,
             note: 4.7,
             temps_prepa: 19,
-            categorie: "autres",
+            categorie: "autre",
             ingredients: ["daurade", "citron", "herbes"]
           },
           {
@@ -458,7 +458,7 @@ const articles = [
             prix: 12,
             note: 4.3,
             temps_prepa: 14,
-            categorie: "autres",
+            categorie: "autre",
             ingredients: ["poulet", "brochette", "sauce"]
           },
           {
@@ -468,7 +468,7 @@ const articles = [
             prix: 13,
             note: 4.4,
             temps_prepa: 15,
-            categorie: "autres",
+            categorie: "autre",
             ingredients: ["poulet", "marinade", "friture"]
           },
           {
@@ -478,7 +478,7 @@ const articles = [
             prix: 16,
             note: 4.6,
             temps_prepa: 18,
-            categorie: "autres",
+            categorie: "autre",
             ingredients: ["œuf", "bouillon", "garnitures"]
           },
           {
@@ -488,7 +488,7 @@ const articles = [
             prix: 9,
             note: 4.1,
             temps_prepa: 11,
-            categorie: "autres",
+            categorie: "autre",
             ingredients: ["riz", "algue", "garniture"]
           },
           {
@@ -498,7 +498,7 @@ const articles = [
             prix: 7,
             note: 3.9,
             temps_prepa: 10,
-            categorie: "autres",
+            categorie: "autre",
             ingredients: ["pâte miso", "eau", "tofu"]
           }
         ]

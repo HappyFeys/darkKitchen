@@ -1,4 +1,5 @@
 import produits from "../db/collection.js";
+const home__menu = document.querySelector("#home__menu");
 
 produits;
 
@@ -19,7 +20,7 @@ const mainComponent = () => {
 
     articles.appendChild(articleImage);
     //ajout des articles dans la main
-    main.appendChild(articles);
+    home__menu.appendChild(articles);
 
     let articleDataContainer = document.createElement("div");
     articleDataContainer.className = "articles__data-container";
@@ -57,11 +58,6 @@ const mainComponent = () => {
     articlePrepTime.innerText = `${produit.temps_prepa} minutes`;
     articlePrepTime.className = "articles__data-container__prepTime";
     articleInfoData.appendChild(articlePrepTime);
-
-    // let articleCategorie = document.createElement('h4');
-    // articleCategorie.innerText = `${produit.categorie.charAt(0).toUpperCase() + produit.categorie.slice(1)}`;
-    // articleCategorie.className = "articles__data-container__categorie";
-    // articleDataContainer.appendChild(articleCategorie);
 
     let articleIngredientsContainer = document.createElement('div');
     articleIngredientsContainer.className = "articles__data-container__ingredients-container";
