@@ -5,6 +5,11 @@
 body {
   font-family: $nunito;
   background-color: aliceblue;
+  position: relative;
+
+  a:visited {
+    color: $darkBlue;
+  }
 
   header {
     width: 95%;
@@ -16,8 +21,47 @@ body {
       justify-content: space-between;
     }
 
-    ul {
+    #nav__desktopMenu {
       display: none;
+    }
+
+    .nav__mobileMenu {
+      position: fixed;
+      height: 25vh;
+      width: 100%;
+      background-color: rgba(255, 255, 255, 0.397);
+      z-index: 20;
+      top: 0;
+      left: 0;
+      bottom: 0;
+      right: 0;
+      margin: 12% auto;
+      opacity: 100%;
+      backdrop-filter: blur(8px);
+      display: flex;
+      flex-direction: row;
+      justify-content: center;
+
+      
+
+      ul {
+        height: 50%;
+        margin: auto 0;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-evenly;
+        align-items: center;
+        font-size: 25px;
+        font-weight: 600;
+
+        a:visited {
+          color: $darkBlue;
+        }
+      }
+    }
+
+    .hidden {
+      display: none !important;
     }
 
     h1 {
@@ -65,7 +109,7 @@ body {
   main {
     width: 85%;
     margin: auto;
-    
+
     #home {
       .home__our-menu {
         h2 {
@@ -76,7 +120,6 @@ body {
       }
     }
 
-    
     article {
       border-radius: 20px;
       margin-bottom: 3%;
@@ -206,38 +249,39 @@ body {
 }
 
 @media screen and (min-width: 1500px) {
-
   header {
-
     .upper-nav-btns {
       justify-content: end !important;
       #nav--btnHamburger {
         display: none;
       }
     }
+    .main__nav {
+      ul {
+        display: flex !important;
+        flex-direction: row !important;
+        font-size: 25px;
+        justify-content: center;
+        gap: 15px;
+        font-weight: 600;
+        margin-top: -2%;
 
-    
-    ul {
-      display: flex !important; 
-      flex-direction: row !important;
-      font-size: 25px;
-      justify-content: center;
-      gap: 15px;
-      font-weight: 600;
-      margin-top: -2%;
-
-      a:visited {
-        color: $darkBlue;
+        a:visited {
+          color: $darkBlue;
+        }
       }
     }
+
+    .nav__mobileMenu {
+      display: none !important;
+    }
+    
   }
 
   main {
-    
     position: relative;
 
     #home {
-
       &__menu {
         display: grid !important;
         grid-template-columns: repeat(3, minmax(0, 1fr)) !important;
@@ -247,9 +291,9 @@ body {
 
     .cart__wrapper {
       position: absolute;
-        right: -102px;
-        top: -100px;
-        z-index: 10;
+      right: -102px;
+      top: -100px;
+      z-index: 10;
       #cart {
         border-radius: 10px;
       }
