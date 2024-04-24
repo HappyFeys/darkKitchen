@@ -1,9 +1,8 @@
+
 import produits from "../db/collection.js";
-
-produits;
-
+produits
 const mainComponent = () => {
-  let main = document.querySelector("main");
+  const home__menu = document.getElementById('home__menu');
   for (let i = 0; i < produits.length; i++) {
     const produit = produits[i];
 
@@ -24,7 +23,7 @@ const mainComponent = () => {
     
     articles.appendChild(articleImage);
     //ajout des articles dans la main
-    main.appendChild(articles);
+    home__menu.appendChild(articles);
 
     let articleDataContainer = document.createElement("div");
     articleDataContainer.className = "articles__data-container";
@@ -79,7 +78,11 @@ const mainComponent = () => {
         articleIngredientsContainer.appendChild(ingredientElement);
     }
   }
+  
 };
+
+
 
 //Pour importer dans app.js
 export default mainComponent;
+
