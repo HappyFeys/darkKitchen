@@ -7,7 +7,8 @@ const articles = [
             note: 4.5,
             temps_prepa: 10,
             categorie: "sashimi",
-            ingredients: ["saumon", "wasabi", "gingembre"]
+            ingredients: ["saumon", "wasabi", "gingembre"],
+            quantité: 1
           },
           {
             id: 2,
@@ -17,7 +18,8 @@ const articles = [
             note: 4.7,
             temps_prepa: 12,
             categorie: "sashimi",
-            ingredients: ["thon", "sésame", "algue"]
+            ingredients: ["thon", "sésame", "algue"],
+            quantité: 1
           },
           {
             id: 3,
@@ -27,7 +29,8 @@ const articles = [
             note: 4.3,
             temps_prepa: 11,
             categorie: "sashimi",
-            ingredients: ["dorade", "citron", "herbes"]
+            ingredients: ["dorade", "citron", "herbes"],
+            quantité: 1
           },
           {
             id: 4,
@@ -37,7 +40,8 @@ const articles = [
             note: 4.1,
             temps_prepa: 9,
             categorie: "sashimi",
-            ingredients: ["maquereau", "raifort", "radis"]
+            ingredients: ["maquereau", "raifort", "radis"],
+            quantité: 1
           },
           {
             id: 5,
@@ -47,7 +51,8 @@ const articles = [
             note: 4.6,
             temps_prepa: 13,
             categorie: "sashimi",
-            ingredients: ["bar", "citron vert", "coriandre"]
+            ingredients: ["bar", "citron vert", "coriandre"],
+            quantité: 1
           },
           {
             id: 6,
@@ -57,7 +62,8 @@ const articles = [
             note: 4.8,
             temps_prepa: 14,
             categorie: "sashimi",
-            ingredients: ["coquille Saint-Jacques", "sauce soja", "wasabi"]
+            ingredients: ["coquille Saint-Jacques", "sauce soja", "wasabi"],
+            quantité: 1
           },
           {
             id: 7,
@@ -67,7 +73,8 @@ const articles = [
             note: 4.2,
             temps_prepa: 10,
             categorie: "sashimi",
-            ingredients: ["carpe", "concombre", "menthe"]
+            ingredients: ["carpe", "concombre", "menthe"],
+            quantité: 1
           },
           {
             id: 8,
@@ -77,7 +84,8 @@ const articles = [
             note: 4.9,
             temps_prepa: 12,
             categorie: "sashimi",
-            ingredients: ["sole", "aneth", "huile d'olive"]
+            ingredients: ["sole", "aneth", "huile d'olive"],
+            quantité: 1
           },
           {
             id: 9,
@@ -87,7 +95,8 @@ const articles = [
             note: 4.0,
             temps_prepa: 8,
             categorie: "sashimi",
-            ingredients: ["mulet", "ail", "vinaigre"]
+            ingredients: ["mulet", "ail", "vinaigre"],
+            quantité: 1
           },
           {
             id: 10,
@@ -97,7 +106,8 @@ const articles = [
             note: 4.5,
             temps_prepa: 11,
             categorie: "sashimi",
-            ingredients: ["turbot", "orange", "poivre"]
+            ingredients: ["turbot", "orange", "poivre"],
+            quantité: 1
           },
         
           {
@@ -108,7 +118,8 @@ const articles = [
             note: 4.4,
             temps_prepa: 15,
             categorie: "sushi",
-            ingredients: ["saumon", "riz", "algue"]
+            ingredients: ["saumon", "riz", "algue"],
+            quantité: 1
           },
           {
             id: 12,
@@ -118,7 +129,8 @@ const articles = [
             note: 4.6,
             temps_prepa: 16,
             categorie: "sushi",
-            ingredients: ["thon", "riz", "algue"]
+            ingredients: ["thon", "riz", "algue"],
+            quantité: 1
           },
           {
             id: 13,
@@ -128,7 +140,8 @@ const articles = [
             note: 4.3,
             temps_prepa: 14,
             categorie: "sushi",
-            ingredients: ["crevette", "riz", "algue"]
+            ingredients: ["crevette", "riz", "algue"],
+            quantité: 1
           },
           {
             id: 14,
@@ -138,7 +151,8 @@ const articles = [
             note: 4.8,
             temps_prepa: 18,
             categorie: "sushi",
-            ingredients: ["anguille", "riz", "algue"]
+            ingredients: ["anguille", "riz", "algue"],
+            quantité: 1
           },
           {
             id: 15,
@@ -148,7 +162,8 @@ const articles = [
             note: 4.0,
             temps_prepa: 12,
             categorie: "sushi",
-            ingredients: ["avocat", "concombre", "riz"]
+            ingredients: ["avocat", "concombre", "riz"],
+            quantité: 1
           },
           {
             id: 16,
@@ -158,7 +173,8 @@ const articles = [
             note: 4.2,
             temps_prepa: 15,
             categorie: "sushi",
-            ingredients: ["maquereau", "riz", "algue"]
+            ingredients: ["maquereau", "riz", "algue"],
+            quantité: 1
           },
           {
             id: 17,
@@ -168,7 +184,8 @@ const articles = [
             note: 4.5,
             temps_prepa: 17,
             categorie: "sushi",
-            ingredients: ["poulpe", "riz", "algue"]
+            ingredients: ["poulpe", "riz", "algue"],
+            quantité: 1
           },
           {
             id: 18,
@@ -178,7 +195,8 @@ const articles = [
             note: 4.4,
             temps_prepa: 16,
             categorie: "sushi",
-            ingredients: ["crabe", "riz", "algue"]
+            ingredients: ["crabe", "riz", "algue"],
+            quantité: 1
           },
           {
             id: 19,
@@ -188,7 +206,8 @@ const articles = [
             note: 4.7,
             temps_prepa: 15,
             categorie: "sushi",
-            ingredients: ["saumon", "avocat", "riz"]
+            ingredients: ["saumon", "avocat", "riz"],
+            quantité: 1
           },
           {
             id: 20,
@@ -198,7 +217,8 @@ const articles = [
             note: 4.9,
             temps_prepa: 17,
             categorie: "sushi",
-            ingredients: ["thon", "ciboulette", "riz"]
+            ingredients: ["thon", "ciboulette", "riz"],
+            quantité: 1
           },
         
           {
@@ -209,7 +229,8 @@ const articles = [
             note: 4.2,
             temps_prepa: 20,
             categorie: "maki",
-            ingredients: ["thon", "riz", "algue"]
+            ingredients: ["thon", "riz", "algue"],
+            quantité: 1
           },
           {
             id: 22,
@@ -219,7 +240,8 @@ const articles = [
             note: 4.4,
             temps_prepa: 22,
             categorie: "maki",
-            ingredients: ["saumon", "riz", "algue"]
+            ingredients: ["saumon", "riz", "algue"],
+            quantité: 1
           },
           {
             id: 23,
@@ -229,7 +251,8 @@ const articles = [
             note: 4.3,
             temps_prepa: 21,
             categorie: "maki",
-            ingredients: ["crabe", "riz", "algue"]
+            ingredients: ["crabe", "riz", "algue"],
+            quantité: 1
           },
           {
             id: 24,
@@ -239,7 +262,8 @@ const articles = [
             note: 4.0,
             temps_prepa: 18,
             categorie: "maki",
-            ingredients: ["avocat", "concombre", "riz"]
+            ingredients: ["avocat", "concombre", "riz"],
+            quantité: 1
           },
           {
             id: 25,
@@ -249,7 +273,8 @@ const articles = [
             note: 4.1,
             temps_prepa: 23,
             categorie: "maki",
-            ingredients: ["maquereau", "riz", "algue"]
+            ingredients: ["maquereau", "riz", "algue"],
+            quantité: 1
           },
           {
             id: 26,
@@ -259,7 +284,8 @@ const articles = [
             note: 4.5,
             temps_prepa: 24,
             categorie: "maki",
-            ingredients: ["poulpe", "riz", "algue"]
+            ingredients: ["poulpe", "riz", "algue"],
+            quantité: 1
           },
           {
             id: 27,
@@ -269,7 +295,8 @@ const articles = [
             note: 3.8,
             temps_prepa: 17,
             categorie: "maki",
-            ingredients: ["concombre", "riz", "algue"]
+            ingredients: ["concombre", "riz", "algue"],
+            quantité: 1
           },
           {
             id: 28,
@@ -279,7 +306,8 @@ const articles = [
             note: 4.2,
             temps_prepa: 19,
             categorie: "maki",
-            ingredients: ["fromage", "riz", "algue"]
+            ingredients: ["fromage", "riz", "algue"],
+            quantité: 1
           },
           {
             id: 29,
@@ -289,7 +317,8 @@ const articles = [
             note: 4.7,
             temps_prepa: 22,
             categorie: "maki",
-            ingredients: ["saumon", "avocat", "riz"]
+            ingredients: ["saumon", "avocat", "riz"],
+            quantité: 1
           },
           {
             id: 30,
@@ -299,7 +328,8 @@ const articles = [
             note: 4.4,
             temps_prepa: 21,
             categorie: "maki",
-            ingredients: ["thon", "sauce épicée", "riz"]
+            ingredients: ["thon", "sauce épicée", "riz"],
+            quantité: 1
           },
           {
             id: 31,
@@ -309,7 +339,8 @@ const articles = [
             note: 4.8,
             temps_prepa: 25,
             categorie: "bento",
-            ingredients: ["poulet", "riz", "légumes"]
+            ingredients: ["poulet", "riz", "légumes"],
+            quantité: 1
           },
           {
             id: 32,
@@ -319,7 +350,8 @@ const articles = [
             note: 4.7,
             temps_prepa: 23,
             categorie: "bento",
-            ingredients: ["saumon", "thon", "dorade"]
+            ingredients: ["saumon", "thon", "dorade"],
+            quantité: 1
           },
           {
             id: 33,
@@ -329,7 +361,8 @@ const articles = [
             note: 4.5,
             temps_prepa: 20,
             categorie: "bento",
-            ingredients: ["tofu", "riz", "légumes"]
+            ingredients: ["tofu", "riz", "légumes"],
+            quantité: 1
           },
           {
             id: 34,
@@ -339,7 +372,8 @@ const articles = [
             note: 4.9,
             temps_prepa: 26,
             categorie: "bento",
-            ingredients: ["porc", "riz", "sauce katsu"]
+            ingredients: ["porc", "riz", "sauce katsu"],
+            quantité: 1
           },
           {
             id: 35,
@@ -349,7 +383,8 @@ const articles = [
             note: 4.6,
             temps_prepa: 24,
             categorie: "bento",
-            ingredients: ["crevettes", "légumes", "sauce tempura"]
+            ingredients: ["crevettes", "légumes", "sauce tempura"],
+            quantité: 1
           },
           {
             id: 36,
@@ -359,7 +394,8 @@ const articles = [
             note: 4.7,
             temps_prepa: 27,
             categorie: "bento",
-            ingredients: ["poulet", "brochette", "riz"]
+            ingredients: ["poulet", "brochette", "riz"],
+            quantité: 1
           },
           {
             id: 37,
@@ -369,7 +405,8 @@ const articles = [
             note: 4.8,
             temps_prepa: 28,
             categorie: "bento",
-            ingredients: ["saumon", "thon", "crevette"]
+            ingredients: ["saumon", "thon", "crevette"],
+            quantité: 1
           },
           {
             id: 38,
@@ -379,7 +416,8 @@ const articles = [
             note: 4.9,
             temps_prepa: 29,
             categorie: "bento",
-            ingredients: ["saumon", "thon", "omelette"]
+            ingredients: ["saumon", "thon", "omelette"],
+            quantité: 1
           },
           {
             id: 39,
@@ -389,7 +427,8 @@ const articles = [
             note: 4.8,
             temps_prepa: 30,
             categorie: "bento",
-            ingredients: ["porc", "riz", "sauce tonkatsu"]
+            ingredients: ["porc", "riz", "sauce tonkatsu"],
+            quantité: 1
           },
           {
             id: 40,
@@ -399,7 +438,8 @@ const articles = [
             note: 4.7,
             temps_prepa: 26,
             categorie: "bento",
-            ingredients: ["crabe", "avocat", "concombre"]
+            ingredients: ["crabe", "avocat", "concombre"],
+            quantité: 1
           },
           {
             id: 41,
@@ -408,8 +448,10 @@ const articles = [
             prix: 16,
             note: 4.6,
             temps_prepa: 18,
-            categorie: "autres",
-            ingredients: ["crevettes", "pâte", "sauce"]
+            categorie: "autre",
+            ingredients: ["crevettes", "pâte", "sauce"],
+            quantité: 1
+
           },
           {
             id: 42,
@@ -418,8 +460,9 @@ const articles = [
             prix: 14,
             note: 4.4,
             temps_prepa: 16,
-            categorie: "autres",
-            ingredients: ["porc", "légumes", "pâte"]
+            categorie: "autre",
+            ingredients: ["porc", "légumes", "pâte"],
+            quantité: 1
           },
           {
             id: 43,
@@ -428,8 +471,9 @@ const articles = [
             prix: 8,
             note: 4.0,
             temps_prepa: 10,
-            categorie: "autres",
-            ingredients: ["soja", "sel"]
+            categorie: "autre",
+            ingredients: ["soja", "sel"],
+            quantité: 1
           },
           {
             id: 44,
@@ -438,8 +482,10 @@ const articles = [
             prix: 15,
             note: 4.5,
             temps_prepa: 17,
-            categorie: "autres",
-            ingredients: ["poulpe", "pâte", "sauce"]
+            categorie: "autre",
+
+            ingredients: ["poulpe", "pâte", "sauce"],
+            quantité: 1
           },
           {
             id: 45,
@@ -448,8 +494,9 @@ const articles = [
             prix: 17,
             note: 4.7,
             temps_prepa: 19,
-            categorie: "autres",
-            ingredients: ["daurade", "citron", "herbes"]
+            categorie: "autre",
+            ingredients: ["daurade", "citron", "herbes"],
+            quantité: 1
           },
           {
             id: 46,
@@ -458,8 +505,9 @@ const articles = [
             prix: 12,
             note: 4.3,
             temps_prepa: 14,
-            categorie: "autres",
-            ingredients: ["poulet", "brochette", "sauce"]
+            categorie: "autre",
+            ingredients: ["poulet", "brochette", "sauce"],
+            quantité: 1
           },
           {
             id: 47,
@@ -468,8 +516,9 @@ const articles = [
             prix: 13,
             note: 4.4,
             temps_prepa: 15,
-            categorie: "autres",
-            ingredients: ["poulet", "marinade", "friture"]
+            categorie: "autre",
+            ingredients: ["poulet", "marinade", "friture"],
+            quantité: 1
           },
           {
             id: 48,
@@ -478,8 +527,9 @@ const articles = [
             prix: 16,
             note: 4.6,
             temps_prepa: 18,
-            categorie: "autres",
-            ingredients: ["œuf", "bouillon", "garnitures"]
+            categorie: "autre",
+            ingredients: ["œuf", "bouillon", "garnitures"],
+            quantité: 1
           },
           {
             id: 49,
@@ -488,8 +538,9 @@ const articles = [
             prix: 9,
             note: 4.1,
             temps_prepa: 11,
-            categorie: "autres",
-            ingredients: ["riz", "algue", "garniture"]
+            categorie: "autre",
+            ingredients: ["riz", "algue", "garniture"],
+            quantité: 1
           },
           {
             id: 50,
@@ -498,8 +549,9 @@ const articles = [
             prix: 7,
             note: 3.9,
             temps_prepa: 10,
-            categorie: "autres",
-            ingredients: ["pâte miso", "eau", "tofu"]
+            categorie: "autre",
+            ingredients: ["pâte miso", "eau", "tofu"],
+            quantité: 1
           }
         ]
 

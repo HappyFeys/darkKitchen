@@ -28,6 +28,35 @@ body {
       margin-top: 20px;
       margin-bottom: 20px;
     }
+    .searchBar{
+      display: flex;
+      justify-content: space-between;
+      width: 100%;
+    }
+    .searchBar--search{
+      width: 60%;
+      margin-bottom: 5px;
+    }
+    .btnFilter--toggle{
+      display: none;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      padding: 10px;
+      background-color: $lime;
+      border-radius: 10px 0 10px 10px;
+      div{
+        width: 100%;
+        display: flex;
+        justify-content: space-evenly;
+      }
+      button{
+        margin: 10px 0;
+        padding: 10px;
+        border-radius: 10px;
+      }
+    }
+    
   }
   main {
     width: 85%;
