@@ -3,8 +3,8 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="./assets/css/main.css" />
-    <link rel="stylesheet" href="./assets/css/panier.css" />
+    <link id="mainCssFile" rel="stylesheet" href="./assets/css/main.css" />
+    <link id="cartCssFile" rel="stylesheet" href="./assets/css/panier.css" />
     <title>Dark Kitchen</title>
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -18,7 +18,7 @@
     ></script>
     <script type="module" src="./assets/js/app.js" defer></script>
   </head>
-  <body>
+  <body class="light-mode">
     <header>
       <nav class="main__nav">
         <!-- Navigation -->
@@ -26,9 +26,12 @@
           <a href="#" id="nav--btnHamburger"
             ><i class="fa-solid fa-bars"></i
           ></a>
-          <a href="#" id="nav__iconPanier"
-            ><i class="fa-solid fa-cart-shopping"></i
-          ></a>
+          <div class="switch-mode">
+            <a id="switchToggle" href="#"><i class="fa-solid fa-rotate"></i></a>
+            <a href="#" id="nav__iconPanier"
+              ><i class="fa-solid fa-cart-shopping"></i
+            ></a>
+          </div>
         </div>
         <ul id="nav__desktopMenu">
           <li><a href="#about">A propos</a></li>

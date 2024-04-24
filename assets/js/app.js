@@ -19,3 +19,7 @@ sort();
 import toggleBurgerMenu from './component/burgerMenu.js';
 
 toggleBurgerMenu();
+
+import switchMode from './component/darkmode.js';
+
+switchMode();

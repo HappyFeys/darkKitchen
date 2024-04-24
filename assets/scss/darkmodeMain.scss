@@ -4,14 +4,11 @@
 
 body {
   font-family: $nunito;
-  background-color: $alice;
+  background-color: $slate;
   position: relative;
-  a {
-    color: $darkBlue;
-  }
 
   a:visited {
-    color: $darkBlue;
+    color: $alice;
   }
 
   header {
@@ -73,7 +70,7 @@ body {
         font-weight: 600;
 
         a:visited {
-          color: $darkBlue;
+          color: $alice;
         }
       }
     }
@@ -88,6 +85,7 @@ body {
       text-align: center;
       margin-top: 20px;
       margin-bottom: 20px;
+      color: $alice;
     }
     .searchBar {
       display: flex;
@@ -110,7 +108,7 @@ body {
       align-items: center;
       justify-content: center;
       padding: 10px;
-      background-color: $lime;
+      background-color: $emerald;
       border-radius: 10px 0 10px 10px;
       div {
         width: 100%;
@@ -133,7 +131,7 @@ body {
         h2 {
           text-align: center;
           font-size: 28px;
-          color: $darkBlue;
+          color: $alice;
         }
       }
     }
@@ -143,7 +141,7 @@ body {
       margin-bottom: 3%;
       margin-top: 5%;
       box-shadow: $shadow;
-      background-color: white;
+      background-color: rgb(51 65 85);
 
       .picture-div {
         height: 200px;
@@ -182,13 +180,13 @@ body {
             font-size: 20px;
             padding: 5px 8px;
             border-radius: 10px;
-            background-color: $lime;
-            color: $alice;
+            background-color: $emerald;
+            color: $slate;
             border: 0;
             transition: background-color ease-in-out 300ms;
 
             &:hover {
-              background-color: $darkLime;
+              background-color: rgb(167 243 208);
               transition: background-color ease-in-out 300ms;
             }
           }
@@ -204,12 +202,13 @@ body {
         h2 {
           font-size: 24px;
           font-weight: 600;
-          color: $darkBlue;
+          color: $alice;
         }
 
         &__price {
           font-size: 20px;
           font-weight: 500;
+          color: $alice;
         }
         &__info-container {
           display: flex;
@@ -222,8 +221,8 @@ body {
             font-weight: 400;
             text-align: center;
             width: 25%;
-            color: $alice;
-            background-color: $darkBlue;
+            color: black;
+            background-color: $alice;
             border-radius: 15px;
             padding: 5px 3px;
           }
@@ -236,7 +235,7 @@ body {
           gap: 15px;
 
           &__ingredient {
-            background-color: $lime;
+            background-color: $emerald;
             border-radius: 10px;
             padding: 5px 3px;
           }
@@ -285,7 +284,7 @@ body {
         margin-top: -2%;
 
         a:visited {
-          color: $darkBlue;
+          color: $alice;
         }
       }
     }
@@ -328,10 +327,10 @@ body {
       padding-top: 16px;
       padding-bottom: 16px;
       font-size: 14px;
-      background-color: black;
+      background-color: white;
 
       a {
-        color: $alice;
+        color: $slate;
       }
     }
   }
