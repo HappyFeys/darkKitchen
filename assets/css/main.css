@@ -4,6 +4,60 @@
   box-sizing: border-box;
 }
 
+#cart {
+  border: 1px solid black;
+  background-color: white;
+}
+#cart #cart__orderNumber h2 {
+  margin-left: 16px;
+  font-size: 24px;
+  font-weight: 700;
+  color: #254160;
+}
+#cart #cart__orderNumber p {
+  margin-left: 16px;
+  font-size: 14px;
+  font-weight: 600;
+}
+#cart #cart__orderNumber p #cart__orderDate {
+  color: #C1C603;
+}
+#cart #cart__orderTotal {
+  margin-left: 80px;
+  font-size: 16px;
+  font-weight: 500;
+  color: #254160;
+  margin-bottom: 5%;
+}
+#cart #cart__orderTotal #cart__orderTotalColor {
+  color: #C1C603;
+}
+#cart #cart__orderButton {
+  position: relative;
+  margin: auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 5%;
+}
+#cart Button {
+  font-family: "Nunito", sans-serif;
+  font-size: 20px;
+  border-radius: 10px;
+  border: 0;
+  background-color: #C1C603;
+  color: aliceblue;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  padding-left: 60px;
+  padding-right: 60px;
+  transition: background-color ease-in-out 300ms;
+}
+#cart Button:hover {
+  background-color: #82860d;
+  transition: background-color ease-in-out 300ms;
+}
+
 body {
   font-family: "Nunito", sans-serif;
   background-color: aliceblue;
@@ -137,9 +191,6 @@ body main article .articles__data-container__ingredients-container__ingredient {
     display: grid;
     grid-template-columns: repeat(3, minmax(0, 1fr));
     gap: 10px;
-  }
-  main section {
-    display: flex !important;
   }
   #home .home__our-menu {
     grid-column: span 3/span 3;

@@ -4,6 +4,7 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="./assets/css/main.css" />
+    <link rel="stylesheet" href="./assets/css/panier.css">
     <title>Dark Kitchen</title>
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -47,8 +48,10 @@
       </div>
       <div id="cart">
         <!-- l'id cart va afficher le contenu du panier (va afficher le pop-up) -->
-        <img id="cart__btnPrevious" src="" alt="retour en arrière" />
+        <!-- <img id="cart__btnPrevious" src="" alt="retour en arrière" /> -->
         <div id="cart__orderNumber">
+          <h2>Order #411023</h2>
+          <p><span id="cart__orderDate">Delivered</span> on May 12, 2019</p>
           <!-- JavaScript -->
         </div>
         <div id="cart__orderList">
@@ -56,9 +59,12 @@
         </div>
         <hr />
         <div id="cart__orderTotal">
+          <p>Total</p>
+          <p>Delivery</p>
+          <p id="cart__orderTotalColor">Total</p>
           <!-- JavaScript -->
         </div>
-        <button>Commander et payer</button>
+        <button id="cart__orderButton">Commander et payer</button>
       </div>
       <div id="home__menu">
         <!-- JavaScript -->
