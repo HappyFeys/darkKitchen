@@ -31,11 +31,17 @@ body {
       display: flex;
       justify-content: space-between;
       width: 100%;
+
+      // .searchBar--search {
+      //   width: 60%;
+      //   margin-bottom: 5px;
+      // }
     }
-    .searchBar--search {
-      width: 60%;
-      margin-bottom: 5px;
+
+    i {
+      font-size: 25px;
     }
+
     .btnFilter--toggle {
       display: none;
       flex-direction: column;
@@ -49,7 +55,7 @@ body {
         display: flex;
         justify-content: space-evenly;
       }
-      button {
+      .btnFilter--cate {
         margin: 10px 0;
         padding: 10px;
         border-radius: 10px;
@@ -200,6 +206,32 @@ body {
 }
 
 @media screen and (min-width: 1500px) {
+
+  header {
+
+    .upper-nav-btns {
+      justify-content: end !important;
+      #nav--btnHamburger {
+        display: none;
+      }
+    }
+
+    
+    ul {
+      display: flex !important; 
+      flex-direction: row !important;
+      font-size: 25px;
+      justify-content: center;
+      gap: 15px;
+      font-weight: 600;
+      margin-top: -2%;
+
+      a:visited {
+        color: $darkBlue;
+      }
+    }
+  }
+
   main {
     
     position: relative;
