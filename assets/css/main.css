@@ -116,6 +116,11 @@ body main {
   width: 85%;
   margin: auto;
 }
+body main #home .home__our-menu h2 {
+  text-align: center;
+  font-size: 28px;
+  color: #254160;
+}
 body main article {
   border-radius: 20px;
   margin-bottom: 3%;
@@ -234,12 +239,21 @@ body footer ul a {
 
 @media screen and (min-width: 1500px) {
   main {
-    display: grid;
-    grid-template-columns: repeat(3, minmax(0, 1fr));
+    position: relative;
+  }
+  main #home__menu {
+    display: grid !important;
+    grid-template-columns: repeat(3, minmax(0, 1fr)) !important;
     gap: 10px;
   }
-  #home .home__our-menu {
-    grid-column: span 3/span 3;
+  main .cart__wrapper {
+    position: absolute;
+    right: -102px;
+    top: -100px;
+    z-index: 10;
+  }
+  main .cart__wrapper #cart {
+    border-radius: 10px;
   }
   footer {
     width: 100%;

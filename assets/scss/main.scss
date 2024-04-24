@@ -2,7 +2,6 @@
 @import "./config.scss"; // les variables
 @import "./panier.scss"; //le panier
 
-
 body {
   font-family: $nunito;
   background-color: aliceblue;
@@ -28,16 +27,16 @@ body {
       margin-top: 20px;
       margin-bottom: 20px;
     }
-    .searchBar{
+    .searchBar {
       display: flex;
       justify-content: space-between;
       width: 100%;
     }
-    .searchBar--search{
+    .searchBar--search {
       width: 60%;
       margin-bottom: 5px;
     }
-    .btnFilter--toggle{
+    .btnFilter--toggle {
       display: none;
       flex-direction: column;
       align-items: center;
@@ -45,24 +44,34 @@ body {
       padding: 10px;
       background-color: $lime;
       border-radius: 10px 0 10px 10px;
-      div{
+      div {
         width: 100%;
         display: flex;
         justify-content: space-evenly;
       }
-      button{
+      button {
         margin: 10px 0;
         padding: 10px;
         border-radius: 10px;
       }
     }
-    
   }
   main {
     width: 85%;
     margin: auto;
+    
+    #home {
+      .home__our-menu {
+        h2 {
+          text-align: center;
+          font-size: 28px;
+          color: $darkBlue;
+        }
+      }
+    }
+
+    
     article {
-      // border: 1px solid black;
       border-radius: 20px;
       margin-bottom: 3%;
       margin-top: 5%;
@@ -96,7 +105,7 @@ body {
           margin: auto;
           height: 100%;
           transition: opacity ease-in-out 300ms,
-          backdrop-filter ease-in-out 300ms;
+            backdrop-filter ease-in-out 300ms;
           display: flex;
           justify-content: center;
           align-items: center;
@@ -169,68 +178,68 @@ body {
     }
   }
 
-    footer{
-      width: 100%;
-      margin: auto;
+  footer {
+    width: 100%;
+    margin: auto;
 
-      ul{
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-        padding-top: 16px;
-        padding-bottom: 16px;
-        font-size: 14px;
-        background-color: black;
+    ul {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      padding-top: 16px;
+      padding-bottom: 16px;
+      font-size: 14px;
+      background-color: black;
 
-        a{
-          color: aliceblue;
-        }
-
+      a {
+        color: aliceblue;
       }
-
     }
-
   }
-
-  
-
+}
 
 @media screen and (min-width: 1500px) {
-    main {
-        display: grid;
-        grid-template-columns: repeat(3, minmax(0, 1fr));
-        gap: 10px;
-
-    }
+  main {
+    
+    position: relative;
 
     #home {
-        .home__our-menu {
-            grid-column: span 3 / span 3;
-        }
 
-
-    }
-
-    footer{
-        width: 100%;
-        margin: auto;
-  
-        ul{
-          display: flex;
-          flex-direction: row !important;
-          justify-content: space-around !important;
-          // align-items: center;
-          padding-top: 16px;
-          padding-bottom: 16px;
-          font-size: 14px;
-          background-color: black;
-  
-          a{
-            color: aliceblue;
-          }
-  
-        }
-  
+      &__menu {
+        display: grid !important;
+        grid-template-columns: repeat(3, minmax(0, 1fr)) !important;
+        gap: 10px;
       }
     }
+
+    .cart__wrapper {
+      position: absolute;
+        right: -102px;
+        top: -100px;
+        z-index: 10;
+      #cart {
+        border-radius: 10px;
+      }
+    }
+  }
+
+  footer {
+    width: 100%;
+    margin: auto;
+
+    ul {
+      display: flex;
+      flex-direction: row !important;
+      justify-content: space-around !important;
+      padding-top: 16px;
+      padding-bottom: 16px;
+      font-size: 14px;
+      background-color: black;
+
+      a {
+        color: aliceblue;
+      }
+    }
+  }
+}

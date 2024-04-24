@@ -4,7 +4,7 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="./assets/css/main.css" />
-    <link rel="stylesheet" href="./assets/css/panier.css">
+    <link rel="stylesheet" href="./assets/css/panier.css" />
     <title>Dark Kitchen</title>
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -12,7 +12,10 @@
       href="https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200..1000;1,200..1000&display=swap"
       rel="stylesheet"
     />
-    <script src="https://kit.fontawesome.com/0e39d36e41.js" crossorigin="anonymous"></script>
+    <script
+      src="https://kit.fontawesome.com/0e39d36e41.js"
+      crossorigin="anonymous"
+    ></script>
     <script type="module" src="./assets/js/app.js" defer></script>
   </head>
   <body>
@@ -20,8 +23,12 @@
       <nav>
         <!-- Navigation -->
         <div class="upper-nav-btns" id="upper-nav-btns">
-          <a href="#" id="nav--btnHamburger"><i class="fa-solid fa-bars"></i></a>
-          <a href="#" id="nav__iconPanier"><i class="fa-solid fa-cart-shopping"></i></a>
+          <a href="#" id="nav--btnHamburger"
+            ><i class="fa-solid fa-bars"></i
+          ></a>
+          <a href="#" id="nav__iconPanier"
+            ><i class="fa-solid fa-cart-shopping"></i
+          ></a>
         </div>
         <ul>
           <li><a href="#about">About</a></li>
@@ -32,18 +39,20 @@
       <h1>Découvrer de nouvelles expériences culinaires</h1>
       <div class="searchBar">
         <!-- barre de recherche -->
-        <div class="searchBar--search">
+        <!-- <div class="searchBar--search">
           <a href="#" id="searchBar__btnSearch"><i class="fa-solid fa-magnifying-glass"></i></a>
           <input type="text" placeholder="Recherche un plat..."/>
-        </div>
-        <a href="#" id="searchBar__btnFilter"><i class="fa-solid fa-sliders"></i></a>
+        </div> -->
+        <a href="#" id="searchBar__btnFilter"
+          ><i class="fa-solid fa-sliders"></i
+        ></a>
       </div>
       <div class="btnFilter--toggle">
         <div>
           <button class="btnFilter--cate">Sushi</button>
           <button class="btnFilter--cate">Maki</button>
           <button class="btnFilter--cate">Sashimi</button>
-        </div>  
+        </div>
         <div>
           <button class="btnFilter--cate">Bento</button>
           <button class="btnFilter--cate">Autre</button>
@@ -53,6 +62,28 @@
     </header>
 
     <main>
+      <div class="cart__wrapper">
+        <div id="cart">
+          <!-- l'id cart va afficher le contenu du panier (va afficher le pop-up) -->
+          <!-- <img id="cart__btnPrevious" src="" alt="retour en arrière" /> -->
+          <div id="cart__orderNumber">
+            <h2>Order #411023</h2>
+            <p><span id="cart__orderDate">Delivered</span> on May 12, 2019</p>
+            <!-- JavaScript -->
+          </div>
+          <div id="cart__orderList">
+            <!-- JavaScript -->
+          </div>
+          <hr />
+          <div id="cart__orderTotal">
+            <p>Total</p>
+            <p>Delivery</p>
+            <p id="cart__orderTotalColor">Total</p>
+            <!-- JavaScript -->
+          </div>
+          <button id="cart__orderButton">Commander et payer</button>
+        </div>
+      </div>
       <div id="home">
         <div class="home__our-menu">
           <h2>Notre menu</h2>
@@ -61,29 +92,6 @@
         <div id="home__menu">
           <!-- JavaScript -->
         </div>
-      </div>
-      <div id="home__menu">
-        <!-- JavaScript -->
-      </div>
-      <div id="cart">
-        <!-- l'id cart va afficher le contenu du panier (va afficher le pop-up) -->
-        <!-- <img id="cart__btnPrevious" src="" alt="retour en arrière" /> -->
-        <div id="cart__orderNumber">
-          <h2>Order #411023</h2>
-          <p><span id="cart__orderDate">Delivered</span> on May 12, 2019</p>
-          <!-- JavaScript -->
-        </div>
-        <div id="cart__orderList">
-          <!-- JavaScript -->
-        </div>
-        <hr />
-        <div id="cart__orderTotal">
-          <p>Total</p>
-          <p>Delivery</p>
-          <p id="cart__orderTotalColor">Total</p>
-          <!-- JavaScript -->
-        </div>
-        <button id="cart__orderButton">Commander et payer</button>
       </div>
     </main>
 
@@ -99,7 +107,7 @@
       <!-- <div class="logo">
         le logo
         <img src="#" alt="Dark Kitchen Logo" />
-      </div>
-    </footer> -->
+      </div> -->
+    </footer>
   </body>
 </html>
