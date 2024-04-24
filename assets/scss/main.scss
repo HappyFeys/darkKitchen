@@ -141,15 +141,22 @@ body {
   }
 
     footer{
-      width: 95%;
+      width: 100%;
       margin: auto;
 
       ul{
         display: flex;
-        flex-direction: row;
-        justify-content: space-around;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
         padding-top: 16px;
+        padding-bottom: 16px;
         font-size: 14px;
+        background-color: black;
+
+        a{
+          color: aliceblue;
+        }
 
       }
 
@@ -173,5 +180,26 @@ body {
 
 
     }
+
+    footer{
+        width: 100%;
+        margin: auto;
   
-}
+        ul{
+          display: flex;
+          flex-direction: row !important;
+          justify-content: space-around !important;
+          // align-items: center;
+          padding-top: 16px;
+          padding-bottom: 16px;
+          font-size: 14px;
+          background-color: black;
+  
+          a{
+            color: aliceblue;
+          }
+  
+        }
+  
+      }
+    }
