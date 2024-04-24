@@ -32,10 +32,23 @@
       <h1>Découvrer de nouvelles expériences culinaires</h1>
       <div class="searchBar">
         <!-- barre de recherche -->
-        <a href="#" id="searchBar__btnSearch"><i class="fa-solid fa-magnifying-glass"></i></a><input
-          type="text"
-          placeholder="Recherche un plat..."
-        /><img id="searchBar__btnFilter" src="" alt="Bouton du filtre" />
+        <div class="searchBar--search">
+          <a href="#" id="searchBar__btnSearch"><i class="fa-solid fa-magnifying-glass"></i></a>
+          <input type="text" placeholder="Recherche un plat..."/>
+        </div>
+        <a href="#" id="searchBar__btnFilter"><i class="fa-solid fa-sliders"></i></a>
+      </div>
+      <div class="btnFilter--toggle">
+        <div>
+          <button class="btnFilter--cate">Sushi</button>
+          <button class="btnFilter--cate">Maki</button>
+          <button class="btnFilter--cate">Sashimi</button>
+        </div>  
+        <div>
+          <button class="btnFilter--cate">Bento</button>
+          <button class="btnFilter--cate">Autre</button>
+          <button class="btnFilter--cate">Tout voir</button>
+        </div>
       </div>
     </header>
 
@@ -43,7 +56,10 @@
       <div id="home">
         <div class="home__our-menu">
           <h2>Notre menu</h2>
-          <a href="#">Tout voir</a>
+          <!-- <a href="#">Tout voir</a> -->
+        </div>
+        <div id="home__menu">
+          <!-- JavaScript -->
         </div>
       </div>
       <div id="home__menu">
@@ -80,10 +96,10 @@
           <li><a href="#social-media">Réseaux Sociaux</a></li>
         </ul>
       </div>
-      <div class="logo">
-        <!-- le logo -->
+      <!-- <div class="logo">
+        le logo
         <img src="#" alt="Dark Kitchen Logo" />
       </div>
-    </footer>
+    </footer> -->
   </body>
 </html>

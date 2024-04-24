@@ -1,12 +1,15 @@
 // Contenu de app.js
-import variablesComponent from './component/variables.js';
 import headerComponent from './component/header.js';
 import mainComponent from './component/main.js';
+import cartComponent from './component/cart.js';
+import produits from "./db/collection.js";
+
+console.log(produits);
 
 // Maintenant vous pouvez utiliser le fichier importé ici
-variablesComponent();
 headerComponent();
 mainComponent();
+cartComponent();
 
 import sort from './component/sort.js';
 

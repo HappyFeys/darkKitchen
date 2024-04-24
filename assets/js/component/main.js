@@ -1,25 +1,29 @@
+
 import produits from "../db/collection.js";
-
-produits;
-
+produits
 const mainComponent = () => {
-  let main = document.querySelector("main");
+  const home__menu = document.getElementById('home__menu');
   for (let i = 0; i < produits.length; i++) {
     const produit = produits[i];
 
     //creation des cartes articles
     let articles = document.createElement("article");
+    
     let articleTitle = document.createElement("h2");
     let articleImage = document.createElement("div");
     articleImage.classList.add("picture-div");
+
+    //ajout d'une classe dans chaque articles pour récupérer l'id
+    articles.classList.add(produit.id);
 
     //Ajout des données dans la carte
     articleTitle.textContent = produit.nom;
     articleImage.style.backgroundImage = `url(${produit.img})`;
 
+    
     articles.appendChild(articleImage);
     //ajout des articles dans la main
-    main.appendChild(articles);
+    home__menu.appendChild(articles);
 
     let articleDataContainer = document.createElement("div");
     articleDataContainer.className = "articles__data-container";
@@ -58,11 +62,6 @@ const mainComponent = () => {
     articlePrepTime.className = "articles__data-container__prepTime";
     articleInfoData.appendChild(articlePrepTime);
 
-    // let articleCategorie = document.createElement('h4');
-    // articleCategorie.innerText = `${produit.categorie.charAt(0).toUpperCase() + produit.categorie.slice(1)}`;
-    // articleCategorie.className = "articles__data-container__categorie";
-    // articleDataContainer.appendChild(articleCategorie);
-
     let articleIngredientsContainer = document.createElement('div');
     articleIngredientsContainer.className = "articles__data-container__ingredients-container";
     articleDataContainer.appendChild(articleIngredientsContainer);
@@ -74,7 +73,11 @@ const mainComponent = () => {
         articleIngredientsContainer.appendChild(ingredientElement);
     }
   }
+  
 };
+
+
 
 //Pour importer dans app.js
 export default mainComponent;
+
