@@ -6,6 +6,10 @@
   text-decoration: none;
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
 #cart {
   border: 1px solid black;
   background-color: white;
@@ -95,6 +99,13 @@ body header .nav__mobileMenu {
   display: flex;
   flex-direction: row;
   justify-content: center;
+}
+body header .nav__mobileMenu #closeMenu {
+  color: darkred;
+  margin-top: 10%;
+}
+body header .nav__mobileMenu #closeMenu:hover {
+  cursor: pointer;
 }
 body header .nav__mobileMenu ul {
   height: 50%;
