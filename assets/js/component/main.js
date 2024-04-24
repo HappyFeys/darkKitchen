@@ -62,11 +62,6 @@ const mainComponent = () => {
     articlePrepTime.className = "articles__data-container__prepTime";
     articleInfoData.appendChild(articlePrepTime);
 
-    // let articleCategorie = document.createElement('h4');
-    // articleCategorie.innerText = `${produit.categorie.charAt(0).toUpperCase() + produit.categorie.slice(1)}`;
-    // articleCategorie.className = "articles__data-container__categorie";
-    // articleDataContainer.appendChild(articleCategorie);
-
     let articleIngredientsContainer = document.createElement('div');
     articleIngredientsContainer.className = "articles__data-container__ingredients-container";
     articleDataContainer.appendChild(articleIngredientsContainer);

@@ -451,6 +451,7 @@ const articles = [
             categorie: "autre",
             ingredients: ["crevettes", "pâte", "sauce"],
             quantité: 1
+
           },
           {
             id: 42,
@@ -482,6 +483,7 @@ const articles = [
             note: 4.5,
             temps_prepa: 17,
             categorie: "autre",
+
             ingredients: ["poulpe", "pâte", "sauce"],
             quantité: 1
           },

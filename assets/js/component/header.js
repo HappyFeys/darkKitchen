@@ -4,8 +4,6 @@ articles;
 
 const headerComponent = () => {
 
-
-
 };
 
 //Pour importer dans app.js
