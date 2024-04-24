@@ -9,6 +9,3 @@ headerComponent();
 mainComponent();
 
 import sort from './component/sort.js';
-
-// Maintenant vous pouvez utiliser le fichier importé ici
-sort();
