@@ -139,7 +139,24 @@ body {
       }
     }
   }
-}
+
+    footer{
+      width: 95%;
+      margin: auto;
+
+      ul{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+        padding-top: 16px;
+        font-size: 14px;
+
+      }
+
+    }
+
+  }
+
 
 @media screen and (min-width: 1500px) {
     main {
@@ -156,4 +173,5 @@ body {
 
 
     }
+  
 }
