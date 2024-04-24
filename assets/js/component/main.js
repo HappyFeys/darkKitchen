@@ -9,14 +9,19 @@ const mainComponent = () => {
 
     //creation des cartes articles
     let articles = document.createElement("article");
+    
     let articleTitle = document.createElement("h2");
     let articleImage = document.createElement("div");
     articleImage.classList.add("picture-div");
+
+    //ajout d'une classe dans chaque articles pour récupérer l'id
+    articles.classList.add(produit.id);
 
     //Ajout des données dans la carte
     articleTitle.textContent = produit.nom;
     articleImage.style.backgroundImage = `url(${produit.img})`;
 
+    
     articles.appendChild(articleImage);
     //ajout des articles dans la main
     main.appendChild(articles);
