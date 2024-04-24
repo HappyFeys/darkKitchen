@@ -9,7 +9,7 @@ const cartComponent = () => {
   const cart__orderList = document.getElementById("cart__orderList");
   //ajout de chaque élements dans le tableau cart lors du click
   for (let i = 0; i < articles.length; i++) {
-    addToCartButton[i].addEventListener('click', () => {
+    addToCartButton[i].addEventListener('click', (e) => {
         cart__orderList.innerHTML = "";
         const articles = document.querySelectorAll('article');
         if (cart.length > 0) {
@@ -37,29 +37,126 @@ const cartComponent = () => {
             cart.push(produits[i]);
         }
         console.log(cart);
+        let sousTotal = [];
+        let initialValue = 0
 
-        cart.forEach(element => {
+       
+        
+        for(let i =0; i<cart.length; i++){
+            
+            let element = cart[i];
+            
+            sousTotal.push(element.prix * element.quantité);
+            let totalValue = sousTotal.reduce((a,b) => a+b, initialValue,);
+
+            if (i === cart.length -1) {
+                //On affiche le prix total
+                document.getElementById('cart__orderTotal').innerHTML = `<h2>Total pour tous les articles : ${totalValue} €</h2>`
+            }
+            
+            
+
+
             //création des élement
-            let achats = document.createElement("article");
+            let cartArticle = document.createElement("article");
 
-            let articlequantity = document.createElement('div');
-            let achatTitle = document.createElement("h2");
-            let achatImage = document.createElement("div");
-            achatImage.classList.add("picture-div");
-    
-            achats.classList.add(element.id);
+            let data_img = document.createElement("div");
+            let data_article = document.createElement('div');
+            let title = document.createElement("h2");
+            let quantity = document.createElement("div");
+            let price = document.createElement('h2');
+
+            
+            
+            //ajout de class
+            data_img.classList.add("picture-div");
+            cartArticle.classList.add('cart-article', element.id);
+            data_article.classList.add("data_article");
+            title.classList.add('title_article');
+            quantity.classList.add('quantity_article');
+            price.classList.add('price_article');
     
             //Ajout des données dans la carte
-            achatTitle.textContent = element.nom;
-            achatImage.style.backgroundImage = `url(${element.img})`;
-    
-            achats.appendChild(achatImage);
-            achats.appendChild(achatTitle);
-            cart__orderList.appendChild(achats);
-        });
-    })   
-  }
+            data_img.style.backgroundImage = `url(${element.img})`;
+            title.textContent = element.nom;
+            quantity.innerHTML = `
+            <button class="remove">-</button>
+            <h2>Quantité : ${element.quantité}</h2>
+            <button class="add">+</button>
+            `;
+            price.textContent = `Total : ${element.prix * element.quantité} €`;
 
+            
+            //Ajout des élement dans le dom
+            data_article.appendChild(price)
+            data_article.appendChild(quantity)
+            data_article.appendChild(title)
+            cartArticle.appendChild(data_img);
+            cartArticle.appendChild(data_article);
+            cart__orderList.appendChild(cartArticle);
+
+            
+            
+        };
+
+        let quantity_data = document.querySelectorAll('.quantity_article');
+            let remove = document.querySelectorAll('.remove');
+            let add = document.querySelectorAll('.add');
+            for (let i = 0; i < quantity_data.length; i++) {
+                add[i].addEventListener('click', () => {
+                    // augmente la quantité
+                    cart[i].quantité++;
+            
+                    // Met à jour la quantité
+                    let h2 = quantity_data[i].querySelector('h2');
+                    h2.textContent = `Quantité : ${cart[i].quantité}`;
+            
+                    // Met à jour le prix de l'item
+                    let totalPrice = cart[i].prix * cart[i].quantité;
+                    let priceElement = quantity_data[i].parentNode.querySelector('.price_article');
+                    priceElement.textContent = `Total : ${totalPrice} €`;
+            
+                    // Met à jour le pannier
+                    sousTotal.push(cart[i].prix);
+                    let totalValue = sousTotal.reduce((a, b) => a + b, 0);
+                    
+                    document.getElementById('cart__orderTotal').innerHTML = `<h2>Total pour tous les articles : ${totalValue} €</h2>`;
+                    
+                });
+
+                remove[i].addEventListener('click', () => {
+                    // augmente la quantité
+                    cart[i].quantité--;
+            
+                    // Met à jour la quantité
+                    let h2 = quantity_data[i].querySelector('h2');
+                    h2.textContent = `Quantité : ${cart[i].quantité}`;
+            
+                    // Met à jour le prix de l'item
+                    let totalPrice = cart[i].prix * cart[i].quantité;
+                    let priceElement = quantity_data[i].parentNode.querySelector('.price_article');
+                    priceElement.textContent = `Total : ${totalPrice} €`;
+            
+                    // Met à jour le pannier
+                    sousTotal.pop();
+                    let totalValue = sousTotal.reduce((a, b) => a + b, 0);
+                    
+                    document.getElementById('cart__orderTotal').innerHTML = `<h2>Total pour tous les articles : ${totalValue} €</h2>`;
+                    
+
+                    //reste à faire une fonction pour supprimer l'article du panier quand on arrive à 0
+                });
+            }
+
+            
+ 
+    })  
+
+    
+  }
+  
+
+  
   let toggle_cart = 0;
   const nav__iconPanier = document.getElementById('nav__iconPanier');
   const cartContainer = document.getElementById('cart');
@@ -75,7 +172,6 @@ const cartComponent = () => {
         toggle_cart -= 1;
     }
   })
-
 
 };
 
