@@ -4,7 +4,7 @@ const switchMode = () => {
   const mainCssFile = document.getElementById("mainCssFile");
 
   const cartCssFile = document.getElementById('cartCssFile');
-
+  let switchMode = 0;
   toggleDarkMode.addEventListener("click", () => {    
     console.log(document.body.classList.contains('light-mode'));
 
@@ -18,6 +18,17 @@ const switchMode = () => {
         cartCssFile.href = "./assets/css/panier.css"
         document.body.classList.remove('dark-mode');
         document.body.classList.add('light-mode');
+    }
+
+    const darkModeButton = document.querySelector('.fa-rotate');
+    
+    if (switchMode === 0) {
+      darkModeButton.style.transform = 'rotate(90deg)';
+      switchMode = 1;
+    }
+    else{
+      darkModeButton.style.transform = 'rotate(180deg)';
+      switchMode = 0;
     }
   });
 };

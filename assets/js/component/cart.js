@@ -16,9 +16,37 @@ const cartComponent = () => {
   console.log();
 
 order_number.innerText = `Numéro de commande : ${Math.floor(random(1000,10000))}`;
+let order = document.getElementById("cart__orderNumber");
+let order_numberDate = order.querySelector('p');
+let date = new Date();
+
+// Ajoutez une heure à la date actuelle
+date.setHours(date.getHours() + 1);
+
+let options = {
+    hour12: false,
+    hour: 'numeric',
+    minute: 'numeric' 
+};
+
+let heure = date.toLocaleTimeString(undefined, options)
+
+
+order_numberDate.innerHTML = `<span id="cart__orderDate">Livraison autour de </span> ${heure}`;
   //ajout de chaque élements dans le tableau cart lors du click
   for (let i = 0; i < articles.length; i++) {
     addToCartButton[i].addEventListener('click', () => {
+
+        //Ajout d'une animation sur l'icone du panier
+        let iconcCartShopping = document.querySelector('.fa-cart-shopping');
+        iconcCartShopping.style.color = 'red';
+        iconcCartShopping.style.transform = 'scale(1.1)';
+        setTimeout(() => {
+            iconcCartShopping.style.color = '#5D576B';
+            iconcCartShopping.style.transform = 'scale(1)';
+        }, 200)
+
+        //Ajout d'article dans le panier
         cart__orderList.innerHTML = "";
         const articles = document.querySelectorAll('article');
         if (cart.length > 0) {
