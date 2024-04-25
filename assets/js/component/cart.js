@@ -16,6 +16,23 @@ const cartComponent = () => {
   console.log();
 
 order_number.innerText = `Numéro de commande : ${Math.floor(random(1000,10000))}`;
+let order = document.getElementById("cart__orderNumber");
+let order_numberDate = order.querySelector('p');
+let date = new Date();
+
+// Ajoutez une heure à la date actuelle
+date.setHours(date.getHours() + 1);
+
+let options = {
+    hour12: false,
+    hour: 'numeric',
+    minute: 'numeric' 
+};
+
+let heure = date.toLocaleTimeString(undefined, options)
+
+
+order_numberDate.innerHTML = `<span id="cart__orderDate">Livraison autour de </span> ${heure}`;
   //ajout de chaque élements dans le tableau cart lors du click
   for (let i = 0; i < articles.length; i++) {
     addToCartButton[i].addEventListener('click', () => {
