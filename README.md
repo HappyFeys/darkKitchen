@@ -26,6 +26,7 @@ Mohamed et Dylan, on va réaliser la structure HTML et voir pour le nomage des c
 
 Résultats de la journée : 
 
+La mise en route a été assez longue, mais une fois que l'on a bien répartis les tâches. Je trouve que cela a roulé. Les objectifs de la première journée ont bien été remplis.
 
 
 ## Jour 2 :
@@ -45,6 +46,8 @@ Dylan -> Je ferai la fonction de tri en fonction des catégories et de prix.
 
 Résultat de la journée : 
 
+Grâce à Justine qui a bossé tard la veille pour préparer le SCSS et quelques autres trucs, nous avons bien pu profité de notre journée en présenciel. Nous avons travaillé en binôme. Justine et Mohamed se sont occupés de la partie CSS comme prévu. Manu et Dylan ont fait les fonctions de tri, d'ajout au panier et de prix total. Nous nous sommes donné un mal de tête pour quelques soucis de bug. Objectif cependant atteint.
+
 ## Jour 3 : 
 Objectifs : 
 - Réaliser le dark mode
@@ -57,3 +60,4 @@ Mohamed -> s'occupe du dark mode du cart.
 
 Résultat de la journée :
 
+Comme pour la deuxième journée, Justine et Manu ont bossé la veille au soir afin d'avancer et préparer un maximum la 3ème journée. Nous avions également remarqué que lorsqu'on triait par catégorie, nous avions un soucis d'ajout au panier. Résumé, nous avons fait une fonction de tri hyper compliqué pour rien car on a réussit a résoudre le soucis en 4 lignes. Tous les objectifs du projet sont réalisés et fonctionnels ! Le temps qu'il nous reste est consacré à du bonus.
