@@ -153,8 +153,11 @@ body header .btnFilter--toggle {
   align-items: center;
   justify-content: center;
   padding: 10px;
-  background-color: #c1c603;
-  border-radius: 10px 0 10px 10px;
+  background-color: white;
+  border-radius: 10px;
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+  width: 90%;
+  margin: auto;
 }
 body header .btnFilter--toggle div {
   width: 100%;
@@ -165,6 +168,16 @@ body header .btnFilter--toggle .btnFilter--cate {
   margin: 10px 0;
   padding: 10px;
   border-radius: 10px;
+  font-weight: 600;
+  background-color: #c1c603;
+  border: 0;
+  padding: 16px 24px;
+  color: aliceblue;
+  transition: background-color ease-in-out 300ms;
+}
+body header .btnFilter--toggle .btnFilter--cate:hover {
+  background-color: #82860d;
+  transition: background-color ease-in-out 300ms;
 }
 body main {
   width: 85%;
@@ -174,6 +187,7 @@ body main #home .home__our-menu h2 {
   text-align: center;
   font-size: 28px;
   color: #254160;
+  padding-top: 20px;
 }
 body main article {
   border-radius: 20px;
