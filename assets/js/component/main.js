@@ -6,14 +6,14 @@ const mainComponent = () => {
   for (let i = 0; i < produits.length; i++) {
     const produit = produits[i];
 
-    //creation des cartes articles
+    //Creation des cartes articles
     let articles = document.createElement("article");
     
     let articleTitle = document.createElement("h2");
     let articleImage = document.createElement("div");
     articleImage.classList.add("picture-div");
 
-    //ajout d'une classe dans chaque articles pour récupérer l'id
+    //Ajout d'une classe dans chaque articles pour récupérer l'id
     articles.classList.add(produit.id);
 
     //Ajout des données dans la carte
@@ -22,25 +22,29 @@ const mainComponent = () => {
 
     
     articles.appendChild(articleImage);
-    //ajout des articles dans la main
+    //Ajout des articles dans la main
     home__menu.appendChild(articles);
 
+    //Ajout d'un div pour stocker les données
     let articleDataContainer = document.createElement("div");
     articleDataContainer.className = "articles__data-container";
     articles.appendChild(articleDataContainer);
 
+    //Ajout d'un d'un div pour ajouter le bouton d'achat
     let buyButtonContainer = document.createElement('div');
     buyButtonContainer.className = "buy-btn-container";
     articleImage.appendChild(buyButtonContainer);
 
+    //Ajout du bouton d'achat
     let absoluteButton = document.createElement('button');
     absoluteButton.setAttribute('id', `buy-btn-${produit.id}`);
     absoluteButton.innerText = "Ajouter au panier";
     absoluteButton.className = "buy-btn";
     buyButtonContainer.appendChild(absoluteButton);
 
-    articleDataContainer.appendChild(articleTitle);
 
+    //Ajout du prix
+    articleDataContainer.appendChild(articleTitle);
 
     let articlePrice = document.createElement('h4');
     articlePrice.innerText = `${produit.prix} €`;
@@ -51,17 +55,19 @@ const mainComponent = () => {
     articleInfoData.className = "articles__data-container__info-container";
     articleDataContainer.appendChild(articleInfoData);
 
-
+    //Ajout du rating de l'article
     let articleNote = document.createElement('h4');
     articleNote.innerText = `${produit.note}`;
     articleNote.className = "articles__data-container__note";
     articleInfoData.appendChild(articleNote);
 
+    //Ajout du temps de préparation
     let articlePrepTime = document.createElement('h4');
     articlePrepTime.innerText = `${produit.temps_prepa} minutes`;
     articlePrepTime.className = "articles__data-container__prepTime";
     articleInfoData.appendChild(articlePrepTime);
 
+    //Ajout des ingrédients
     let articleIngredientsContainer = document.createElement('div');
     articleIngredientsContainer.className = "articles__data-container__ingredients-container";
     articleDataContainer.appendChild(articleIngredientsContainer);
