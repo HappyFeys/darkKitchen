@@ -1,0 +1,51 @@
+#cart {
+  border: 1px solid white;
+  background-color: rgb(15, 23, 42);
+}
+#cart #cart__orderNumber h2 {
+  margin-left: 16px;
+  font-size: 24px;
+  font-weight: 700;
+  color: aliceblue;
+}
+#cart #cart__orderNumber p {
+  margin-left: 16px;
+  font-size: 14px;
+  font-weight: 600;
+  color: aliceblue;
+}
+#cart #cart__orderNumber p #cart__orderDate {
+  color: rgb(52, 211, 153);
+}
+#cart #cart__orderTotal {
+  margin-left: 80px;
+  font-size: 16px;
+  font-weight: 500;
+  color: aliceblue;
+  margin-bottom: 5%;
+}
+#cart #cart__orderTotal #cart__orderTotalColor {
+  color: rgb(52, 211, 153);
+}
+#cart #cart__orderButton {
+  position: relative;
+  margin: auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 5%;
+}
+#cart button {
+  font-family: "Nunito", sans-serif;
+  font-size: 20px;
+  border-radius: 10px;
+  border: 0;
+  background-color: rgb(52, 211, 153);
+  color: rgb(15, 23, 42);
+  padding: 10px 60px;
+  transition: background-color ease-in-out 300ms;
+}
+#cart button:hover {
+  background-color: rgb(167, 243, 208);
+  transition: background-color ease-in-out 300ms;
+}/*# sourceMappingURL=darkmodePanier.css.map */
