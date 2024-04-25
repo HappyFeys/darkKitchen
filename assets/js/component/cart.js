@@ -7,9 +7,18 @@ const cartComponent = () => {
   let articles = document.querySelectorAll('article');
   let addToCartButton = document.querySelectorAll('.buy-btn');
   const cart__orderList = document.getElementById("cart__orderList");
+
+  let order_number = document.getElementById('cart__orderNumber_h2');
+  function random(min, max) {
+    return min + Math.random() * (max - min);
+  }
+  
+  console.log();
+
+order_number.innerText = `Numéro de commande : ${Math.floor(random(1000,10000))}`;
   //ajout de chaque élements dans le tableau cart lors du click
   for (let i = 0; i < articles.length; i++) {
-    addToCartButton[i].addEventListener('click', (e) => {
+    addToCartButton[i].addEventListener('click', () => {
         cart__orderList.innerHTML = "";
         const articles = document.querySelectorAll('article');
         if (cart.length > 0) {
@@ -126,7 +135,10 @@ const cartComponent = () => {
 
                 remove[i].addEventListener('click', () => {
                     // augmente la quantité
+                    console.log(cart[i].quantité);
                     cart[i].quantité--;
+                    console.log(cart[i].quantité);
+                    
             
                     // Met à jour la quantité
                     let h2 = quantity_data[i].querySelector('h2');
@@ -143,7 +155,12 @@ const cartComponent = () => {
                     
                     document.getElementById('cart__orderTotal').innerHTML = `<h2>Total pour tous les articles : ${totalValue} €</h2>`;
                     
-
+                    if (cart[i].quantité < 1) {
+                        let articleCart = document.querySelectorAll('article');
+                        produits[i].quantité = 1;        
+                        cart.splice(i,1)            
+                        articleCart[i].remove();
+                    }
                     //reste à faire une fonction pour supprimer l'article du panier quand on arrive à 0
                 });
             }
