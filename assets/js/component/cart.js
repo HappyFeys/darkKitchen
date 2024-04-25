@@ -37,6 +37,8 @@ const cartComponent = () => {
             cart.push(produits[i]);
         }
         console.log(cart);
+        
+        let total=0;
 
         cart.forEach(element => {
             //création des élement
@@ -59,7 +61,7 @@ const cartComponent = () => {
         });
     })   
   }
-
+  
   let toggle_cart = 0;
   const nav__iconPanier = document.getElementById('nav__iconPanier');
   const cartContainer = document.getElementById('cart');
@@ -76,8 +78,9 @@ const cartComponent = () => {
     }
   })
 
-
 };
 
 //Pour importer dans app.js
 export default cartComponent;
+
+
