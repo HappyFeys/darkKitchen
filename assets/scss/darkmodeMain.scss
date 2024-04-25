@@ -108,8 +108,13 @@ body {
       align-items: center;
       justify-content: center;
       padding: 10px;
-      background-color: $emerald;
-      border-radius: 10px 0 10px 10px;
+      background-color: $lighterSlate;
+      // border: 1px solid black;
+      border-radius: 10px;
+      box-shadow: $shadow;
+      width: 90%;
+      margin: auto;
+
       div {
         width: 100%;
         display: flex;
@@ -119,6 +124,17 @@ body {
         margin: 10px 0;
         padding: 10px;
         border-radius: 10px;
+        font-weight: 600;
+        background-color: $emerald;
+        border: 0;
+        padding: 16px 24px;
+        color: $slate;
+        transition: background-color ease-in-out 300ms;
+
+        &:hover{
+          background-color: rgb(167 243 208);
+          transition: background-color ease-in-out 300ms;
+        }
       }
     }
   }
@@ -132,6 +148,7 @@ body {
           text-align: center;
           font-size: 28px;
           color: $alice;
+          padding-top: 20px;
         }
       }
     }
