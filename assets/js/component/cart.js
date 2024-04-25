@@ -19,6 +19,17 @@ order_number.innerText = `Numéro de commande : ${Math.floor(random(1000,10000))
   //ajout de chaque élements dans le tableau cart lors du click
   for (let i = 0; i < articles.length; i++) {
     addToCartButton[i].addEventListener('click', () => {
+
+        //Ajout d'une animation sur l'icone du panier
+        let iconcCartShopping = document.querySelector('.fa-cart-shopping');
+        iconcCartShopping.style.color = 'red';
+        iconcCartShopping.style.transform = 'scale(1.1)';
+        setTimeout(() => {
+            iconcCartShopping.style.color = '#5D576B';
+            iconcCartShopping.style.transform = 'scale(1)';
+        }, 200)
+
+        //Ajout d'article dans le panier
         cart__orderList.innerHTML = "";
         const articles = document.querySelectorAll('article');
         if (cart.length > 0) {
@@ -157,7 +168,7 @@ order_number.innerText = `Numéro de commande : ${Math.floor(random(1000,10000))
                     
                     if (cart[i].quantité < 1) {
                         let articleCart = document.querySelectorAll('article');
-                        produits[i].quantité = 1;        
+                        cart[i].quantité = 1;        
                         cart.splice(i,1)            
                         articleCart[i].remove();
                     }
