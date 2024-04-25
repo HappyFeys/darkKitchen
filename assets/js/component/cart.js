@@ -127,8 +127,8 @@ order_numberDate.innerHTML = `<span id="cart__orderDate">Livraison autour de </s
             //Ajout des élement dans le dom
             data_article.appendChild(price)
             data_article.appendChild(quantity)
-            data_article.appendChild(title)
             cartArticle.appendChild(data_img);
+            cartArticle.appendChild(title)
             cartArticle.appendChild(data_article);
             cart__orderList.appendChild(cartArticle);
 

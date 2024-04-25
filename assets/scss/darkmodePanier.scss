@@ -1,5 +1,8 @@
+@import "./reset.scss"; // les resets
 @import "./config.scss"; // les variables
+
 #cart {
+    display: none;
     border: 1px solid white;
     background-color: $slate;
   
@@ -21,6 +24,40 @@
           color: $emerald;
         }
       }
+      
+    }
+
+    #cart__orderList{
+      .cart-article {
+  
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        margin: 2%;
+        padding-bottom: 16px;
+  
+        .picture-div{
+          width: 100%;
+          border-radius: 100%;
+        }
+  
+        h2{
+          font-size: 16px;
+          font-weight: 700;
+          text-align: center;
+          color: $alice;
+        }
+  
+        h2.title_article{
+          font-size: 20px;
+          font-weight: 700;
+          padding-bottom: 16px;
+        }
+  
+  
+      }
+      
     }
     #cart__orderTotal {
       margin-left: 80px;
@@ -28,6 +65,12 @@
       font-weight: 500;
       color: $alice;
       margin-bottom: 5%;
+
+      h2{
+        font-size: 16px;
+        padding-top: 16px;
+  
+      }
   
       #cart__orderTotalColor {
         color: $emerald;
