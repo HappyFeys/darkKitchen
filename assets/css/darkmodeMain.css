@@ -26,7 +26,7 @@ html {
   font-weight: 600;
 }
 #cart #cart__orderNumber p #cart__orderDate {
-  color: #C1C603;
+  color: #c1c603;
 }
 #cart #cart__orderTotal {
   margin-left: 80px;
@@ -36,7 +36,7 @@ html {
   margin-bottom: 5%;
 }
 #cart #cart__orderTotal #cart__orderTotalColor {
-  color: #C1C603;
+  color: #c1c603;
 }
 #cart #cart__orderButton {
   position: relative;
@@ -51,7 +51,7 @@ html {
   font-size: 20px;
   border-radius: 10px;
   border: 0;
-  background-color: #C1C603;
+  background-color: #c1c603;
   color: aliceblue;
   padding: 10px 60px;
   transition: background-color ease-in-out 300ms;
