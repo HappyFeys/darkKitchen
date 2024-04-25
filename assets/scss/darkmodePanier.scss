@@ -1,0 +1,60 @@
+@import "./config.scss"; // les variables
+#cart {
+    border: 1px solid white;
+    background-color: $slate;
+  
+    #cart__orderNumber {
+      h2 {
+        margin-left: 16px;
+        font-size: 24px;
+        font-weight: 700;
+        color: $alice;
+      }
+  
+      p {
+        margin-left: 16px;
+        font-size: 14px;
+        font-weight: 600;
+        color: $alice;
+  
+        #cart__orderDate {
+          color: $emerald;
+        }
+      }
+    }
+    #cart__orderTotal {
+      margin-left: 80px;
+      font-size: 16px;
+      font-weight: 500;
+      color: $alice;
+      margin-bottom: 5%;
+  
+      #cart__orderTotalColor {
+        color: $emerald;
+      }
+    }
+    #cart__orderButton {
+      position: relative;
+      margin: auto;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      margin-bottom: 5%;
+    }
+    button {
+      font-family: $nunito;
+      font-size: 20px;
+      border-radius: 10px;
+      border: 0;
+      background-color: $emerald;
+      color: $slate;
+      padding: 10px 60px;
+      transition: background-color ease-in-out 300ms;
+  
+      &:hover {
+        background-color: rgb(167 243 208);
+        transition: background-color ease-in-out 300ms;
+      }
+    }
+  }
+  
