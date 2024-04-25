@@ -26,7 +26,7 @@ html {
   font-weight: 600;
 }
 #cart #cart__orderNumber p #cart__orderDate {
-  color: #c1c603;
+  color: #C1C603;
 }
 #cart #cart__orderTotal {
   margin-left: 80px;
@@ -36,7 +36,7 @@ html {
   margin-bottom: 5%;
 }
 #cart #cart__orderTotal #cart__orderTotalColor {
-  color: #c1c603;
+  color: #C1C603;
 }
 #cart #cart__orderButton {
   position: relative;
@@ -51,7 +51,7 @@ html {
   font-size: 20px;
   border-radius: 10px;
   border: 0;
-  background-color: #c1c603;
+  background-color: #C1C603;
   color: aliceblue;
   padding: 10px 60px;
   transition: background-color ease-in-out 300ms;
@@ -63,14 +63,11 @@ html {
 
 body {
   font-family: "Nunito", sans-serif;
-  background-color: aliceblue;
+  background-color: rgb(15, 23, 42);
   position: relative;
 }
-body a {
-  color: #254160;
-}
 body a:visited {
-  color: #254160;
+  color: aliceblue;
 }
 body header {
   width: 95%;
@@ -127,7 +124,7 @@ body header .nav__mobileMenu ul {
   font-weight: 600;
 }
 body header .nav__mobileMenu ul a:visited {
-  color: #254160;
+  color: aliceblue;
 }
 body header .hidden {
   display: none !important;
@@ -138,6 +135,7 @@ body header h1 {
   text-align: center;
   margin-top: 20px;
   margin-bottom: 20px;
+  color: aliceblue;
 }
 body header .searchBar {
   display: flex;
@@ -153,7 +151,7 @@ body header .btnFilter--toggle {
   align-items: center;
   justify-content: center;
   padding: 10px;
-  background-color: #c1c603;
+  background-color: rgb(52, 211, 153);
   border-radius: 10px 0 10px 10px;
 }
 body header .btnFilter--toggle div {
@@ -173,14 +171,14 @@ body main {
 body main #home .home__our-menu h2 {
   text-align: center;
   font-size: 28px;
-  color: #254160;
+  color: aliceblue;
 }
 body main article {
   border-radius: 20px;
   margin-bottom: 3%;
   margin-top: 5%;
   box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
-  background-color: white;
+  background-color: rgb(51, 65, 85);
 }
 body main article .picture-div {
   height: 200px;
@@ -221,13 +219,13 @@ body main article .picture-div .buy-btn-container button {
   font-size: 20px;
   padding: 5px 8px;
   border-radius: 10px;
-  background-color: #c1c603;
-  color: aliceblue;
+  background-color: rgb(52, 211, 153);
+  color: rgb(15, 23, 42);
   border: 0;
   transition: background-color ease-in-out 300ms;
 }
 body main article .picture-div .buy-btn-container button:hover {
-  background-color: #82860d;
+  background-color: rgb(167, 243, 208);
   transition: background-color ease-in-out 300ms;
 }
 body main article .articles__data-container {
@@ -239,11 +237,12 @@ body main article .articles__data-container {
 body main article .articles__data-container h2 {
   font-size: 24px;
   font-weight: 600;
-  color: #254160;
+  color: aliceblue;
 }
 body main article .articles__data-container__price {
   font-size: 20px;
   font-weight: 500;
+  color: aliceblue;
 }
 body main article .articles__data-container__info-container {
   display: flex;
@@ -256,8 +255,8 @@ body main article .articles__data-container__info-container h4 {
   font-weight: 400;
   text-align: center;
   width: 25%;
-  color: aliceblue;
-  background-color: #254160;
+  color: black;
+  background-color: aliceblue;
   border-radius: 15px;
   padding: 5px 3px;
 }
@@ -269,7 +268,7 @@ body main article .articles__data-container__ingredients-container {
   gap: 15px;
 }
 body main article .articles__data-container__ingredients-container__ingredient {
-  background-color: #c1c603;
+  background-color: rgb(52, 211, 153);
   border-radius: 10px;
   padding: 5px 3px;
 }
@@ -308,7 +307,7 @@ body footer ul a {
     margin-top: -2%;
   }
   header .main__nav ul a:visited {
-    color: #254160;
+    color: aliceblue;
   }
   header .nav__mobileMenu {
     display: none !important;
@@ -341,9 +340,9 @@ body footer ul a {
     padding-top: 16px;
     padding-bottom: 16px;
     font-size: 14px;
-    background-color: black;
+    background-color: white;
   }
   footer ul a {
-    color: aliceblue;
+    color: rgb(15, 23, 42);
   }
-}/*# sourceMappingURL=main.css.map */
+}/*# sourceMappingURL=darkmodeMain.css.map */

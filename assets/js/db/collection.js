@@ -1,466 +1,558 @@
-const articles = {
-        "sashimi": [
+const articles = [
           {
+            id: 1,
             nom: "Sashimi de saumon",
-            img: "sashimi_saumon.jpg",
+            img: "./assets/images/sashimis/sashimi-saumon.jpg",
             prix: 15,
             note: 4.5,
             temps_prepa: 10,
             categorie: "sashimi",
-            ingredients: ["saumon", "wasabi", "gingembre"]
+            ingredients: ["saumon", "wasabi", "gingembre"],
+            quantité: 1
           },
           {
+            id: 2,
             nom: "Sashimi de thon",
-            img: "sashimi_thon.jpg",
+            img: "./assets/images/sashimis/sashimi-thon.jpg",
             prix: 18,
             note: 4.7,
             temps_prepa: 12,
             categorie: "sashimi",
-            ingredients: ["thon", "sésame", "algue"]
+            ingredients: ["thon", "sésame", "algue"],
+            quantité: 1
           },
           {
+            id: 3,
             nom: "Sashimi de dorade",
-            img: "sashimi_dorade.jpg",
+            img: "./assets/images/sashimis/sashimi-dorade.jpg",
             prix: 16,
             note: 4.3,
             temps_prepa: 11,
             categorie: "sashimi",
-            ingredients: ["dorade", "citron", "herbes"]
+            ingredients: ["dorade", "citron", "herbes"],
+            quantité: 1
           },
           {
+            id: 4,
             nom: "Sashimi de maquereau",
-            img: "sashimi_maquereau.jpg",
+            img: "./assets/images/sashimis/sashimi-maquereau.png",
             prix: 14,
             note: 4.1,
             temps_prepa: 9,
             categorie: "sashimi",
-            ingredients: ["maquereau", "raifort", "radis"]
+            ingredients: ["maquereau", "raifort", "radis"],
+            quantité: 1
           },
           {
+            id: 5,
             nom: "Sashimi de bar",
-            img: "sashimi_bar.jpg",
+            img: "./assets/images/sashimis/sashimi-Bar.jpg",
             prix: 17,
             note: 4.6,
             temps_prepa: 13,
             categorie: "sashimi",
-            ingredients: ["bar", "citron vert", "coriandre"]
+            ingredients: ["bar", "citron vert", "coriandre"],
+            quantité: 1
           },
           {
+            id: 6,
             nom: "Sashimi de coquille Saint-Jacques",
-            img: "sashimi_saintjacques.jpg",
+            img: "./assets/images/sashimis/sashimi-saint-jacques.jpg",
             prix: 20,
             note: 4.8,
             temps_prepa: 14,
             categorie: "sashimi",
-            ingredients: ["coquille Saint-Jacques", "sauce soja", "wasabi"]
+            ingredients: ["coquille Saint-Jacques", "sauce soja", "wasabi"],
+            quantité: 1
           },
           {
+            id: 7,
             nom: "Sashimi de carpe",
-            img: "sashimi_carpe.jpg",
+            img: "./assets/images/sashimis/sashimi-carpe.jpg",
             prix: 15,
             note: 4.2,
             temps_prepa: 10,
             categorie: "sashimi",
-            ingredients: ["carpe", "concombre", "menthe"]
+            ingredients: ["carpe", "concombre", "menthe"],
+            quantité: 1
           },
           {
+            id: 8,
             nom: "Sashimi de sole",
-            img: "sashimi_sole.jpg",
+            img: "./assets/images/sashimis/sashimi-sole.jpg",
             prix: 19,
             note: 4.9,
             temps_prepa: 12,
             categorie: "sashimi",
-            ingredients: ["sole", "aneth", "huile d'olive"]
+            ingredients: ["sole", "aneth", "huile d'olive"],
+            quantité: 1
           },
           {
+            id: 9,
             nom: "Sashimi de mulet",
-            img: "sashimi_mulet.jpg",
+            img: "./assets/images/sashimis/sashimi-mulet.jpg",
             prix: 13,
             note: 4.0,
             temps_prepa: 8,
             categorie: "sashimi",
-            ingredients: ["mulet", "ail", "vinaigre"]
+            ingredients: ["mulet", "ail", "vinaigre"],
+            quantité: 1
           },
           {
+            id: 10,
             nom: "Sashimi de turbot",
-            img: "sashimi_turbot.jpg",
+            img: "./assets/images/sashimis/sashimi-turbot.jpg",
             prix: 18,
             note: 4.5,
             temps_prepa: 11,
             categorie: "sashimi",
-            ingredients: ["turbot", "orange", "poivre"]
-          }
-        ],
-        "sushi": [
+            ingredients: ["turbot", "orange", "poivre"],
+            quantité: 1
+          },
+        
           {
+            id: 11,
             nom: "Sushi au saumon",
-            img: "sushi_saumon.jpg",
+            img: "./assets/images/sushis/sushi-saumon.jpg",
             prix: 12,
             note: 4.4,
             temps_prepa: 15,
             categorie: "sushi",
-            ingredients: ["saumon", "riz", "algue"]
+            ingredients: ["saumon", "riz", "algue"],
+            quantité: 1
           },
           {
+            id: 12,
             nom: "Sushi au thon",
-            img: "sushi_thon.jpg",
+            img: "./assets/images/sushis/sushi-thon.jpg",
             prix: 14,
             note: 4.6,
             temps_prepa: 16,
             categorie: "sushi",
-            ingredients: ["thon", "riz", "algue"]
+            ingredients: ["thon", "riz", "algue"],
+            quantité: 1
           },
           {
+            id: 13,
             nom: "Sushi à la crevette",
-            img: "sushi_crevette.jpg",
+            img: "./assets/images/sushis/sushi-crevette.jpg",
             prix: 11,
             note: 4.3,
             temps_prepa: 14,
             categorie: "sushi",
-            ingredients: ["crevette", "riz", "algue"]
+            ingredients: ["crevette", "riz", "algue"],
+            quantité: 1
           },
           {
+            id: 14,
             nom: "Sushi à l'anguille",
-            img: "sushi_anguille.jpg",
+            img: "./assets/images/sushis/sushi-anguilles.jpg",
             prix: 20,
             note: 4.8,
             temps_prepa: 18,
             categorie: "sushi",
-            ingredients: ["anguille", "riz", "algue"]
+            ingredients: ["anguille", "riz", "algue"],
+            quantité: 1
           },
           {
+            id: 15,
             nom: "Sushi végétarien",
-            img: "sushi_vegetarien.jpg",
+            img: "./assets/images/sushis/sushi-vege.jpeg",
             prix: 10,
             note: 4.0,
             temps_prepa: 12,
             categorie: "sushi",
-            ingredients: ["avocat", "concombre", "riz"]
+            ingredients: ["avocat", "concombre", "riz"],
+            quantité: 1
           },
           {
+            id: 16,
             nom: "Sushi au maquereau",
-            img: "sushi_maquereau.jpg",
+            img: "./assets/images/sushis/sushi-maquereau.jpg",
             prix: 13,
             note: 4.2,
             temps_prepa: 15,
             categorie: "sushi",
-            ingredients: ["maquereau", "riz", "algue"]
+            ingredients: ["maquereau", "riz", "algue"],
+            quantité: 1
           },
           {
+            id: 17,
             nom: "Sushi au poulpe",
-            img: "sushi_poulpe.jpg",
+            img: "./assets/images/sushis/sushi-poulpe.jpg",
             prix: 16,
             note: 4.5,
             temps_prepa: 17,
             categorie: "sushi",
-            ingredients: ["poulpe", "riz", "algue"]
+            ingredients: ["poulpe", "riz", "algue"],
+            quantité: 1
           },
           {
+            id: 18,
             nom: "Sushi au crabe",
-            img: "sushi_crabe.jpg",
+            img: "./assets/images/sushis/sushi-crabe.jpg",
             prix: 15,
             note: 4.4,
             temps_prepa: 16,
             categorie: "sushi",
-            ingredients: ["crabe", "riz", "algue"]
+            ingredients: ["crabe", "riz", "algue"],
+            quantité: 1
           },
           {
+            id: 19,
             nom: "Sushi au saumon et avocat",
-            img: "sushi_saumon_avocat.jpg",
+            img: "./assets/images/sushis/sushi-saumon-avocat.png",
             prix: 17,
             note: 4.7,
             temps_prepa: 15,
             categorie: "sushi",
-            ingredients: ["saumon", "avocat", "riz"]
+            ingredients: ["saumon", "avocat", "riz"],
+            quantité: 1
           },
           {
+            id: 20,
             nom: "Sushi au thon et ciboulette",
-            img: "sushi_thon_ciboulette.jpg",
+            img: "./assets/images/sushis/sushi-thon.jpg",
             prix: 18,
             note: 4.9,
             temps_prepa: 17,
             categorie: "sushi",
-            ingredients: ["thon", "ciboulette", "riz"]
-          }
-        ],
-        "maki": [
+            ingredients: ["thon", "ciboulette", "riz"],
+            quantité: 1
+          },
+        
           {
+            id: 21,
             nom: "Maki au thon",
-            img: "maki_thon.jpg",
+            img: "./assets/images/makis/maki-thon.jpg",
             prix: 10,
             note: 4.2,
             temps_prepa: 20,
             categorie: "maki",
-            ingredients: ["thon", "riz", "algue"]
+            ingredients: ["thon", "riz", "algue"],
+            quantité: 1
           },
           {
+            id: 22,
             nom: "Maki au saumon",
-            img: "maki_saumon.jpg",
+            img: "./assets/images/makis/maki-saumon.jpeg",
             prix: 12,
             note: 4.4,
             temps_prepa: 22,
             categorie: "maki",
-            ingredients: ["saumon", "riz", "algue"]
+            ingredients: ["saumon", "riz", "algue"],
+            quantité: 1
           },
           {
+            id: 23,
             nom: "Maki au crabe",
-            img: "maki_crabe.jpg",
+            img: "./assets/images/makis/maki-crabe.jpg",
             prix: 11,
             note: 4.3,
             temps_prepa: 21,
             categorie: "maki",
-            ingredients: ["crabe", "riz", "algue"]
+            ingredients: ["crabe", "riz", "algue"],
+            quantité: 1
           },
           {
+            id: 24,
             nom: "Maki végétarien",
-            img: "maki_vegetarien.jpg",
+            img: "./assets/images/makis/makis-vege.jpeg",
             prix: 9,
             note: 4.0,
             temps_prepa: 18,
             categorie: "maki",
-            ingredients: ["avocat", "concombre", "riz"]
+            ingredients: ["avocat", "concombre", "riz"],
+            quantité: 1
           },
           {
+            id: 25,
             nom: "Maki au maquereau",
-            img: "maki_maquereau.jpg",
+            img: "./assets/images/makis/maki-maquereau.jpg",
             prix: 13,
             note: 4.1,
             temps_prepa: 23,
             categorie: "maki",
-            ingredients: ["maquereau", "riz", "algue"]
+            ingredients: ["maquereau", "riz", "algue"],
+            quantité: 1
           },
           {
+            id: 26,
             nom: "Maki au poulpe",
-            img: "maki_poulpe.jpg",
+            img: "./assets/images/makis/maki-poulpe.jpg",
             prix: 14,
             note: 4.5,
             temps_prepa: 24,
             categorie: "maki",
-            ingredients: ["poulpe", "riz", "algue"]
+            ingredients: ["poulpe", "riz", "algue"],
+            quantité: 1
           },
           {
+            id: 27,
             nom: "Maki au concombre",
-            img: "maki_concombre.jpg",
+            img: "./assets/images/makis/maki-concombre.jpg",
             prix: 8,
             note: 3.8,
             temps_prepa: 17,
             categorie: "maki",
-            ingredients: ["concombre", "riz", "algue"]
+            ingredients: ["concombre", "riz", "algue"],
+            quantité: 1
           },
           {
+            id: 28,
             nom: "Maki au fromage",
-            img: "maki_fromage.jpg",
+            img: "./assets/images/makis/maki-fromage.jpg",
             prix: 10,
             note: 4.2,
             temps_prepa: 19,
             categorie: "maki",
-            ingredients: ["fromage", "riz", "algue"]
+            ingredients: ["fromage", "riz", "algue"],
+            quantité: 1
           },
           {
+            id: 29,
             nom: "Maki au saumon et avocat",
-            img: "maki_saumon_avocat.jpg",
+            img: "./assets/images/makis/maki-saumon-avocat.jpg",
             prix: 15,
             note: 4.7,
             temps_prepa: 22,
             categorie: "maki",
-            ingredients: ["saumon", "avocat", "riz"]
+            ingredients: ["saumon", "avocat", "riz"],
+            quantité: 1
           },
           {
+            id: 30,
             nom: "Maki au thon épicé",
-            img: "maki_thon_epice.jpg",
+            img: "./assets/images/makis/maki-épicé.jpg",
             prix: 12,
             note: 4.4,
             temps_prepa: 21,
             categorie: "maki",
-            ingredients: ["thon", "sauce épicée", "riz"]
-          }
-        ],
-        "bento": [
+            ingredients: ["thon", "sauce épicée", "riz"],
+            quantité: 1
+          },
           {
+            id: 31,
             nom: "Bento teriyaki",
-            img: "bento_teriyaki.jpg",
+            img: "./assets/images/bentos/teriyaki.jpg",
             prix: 20,
             note: 4.8,
             temps_prepa: 25,
             categorie: "bento",
-            ingredients: ["poulet", "riz", "légumes"]
+            ingredients: ["poulet", "riz", "légumes"],
+            quantité: 1
           },
           {
+            id: 32,
             nom: "Bento sashimi",
-            img: "bento_sashimi.jpg",
+            img: "./assets/images/bentos/sashimi.jpg",
             prix: 22,
             note: 4.7,
             temps_prepa: 23,
             categorie: "bento",
-            ingredients: ["saumon", "thon", "dorade"]
+            ingredients: ["saumon", "thon", "dorade"],
+            quantité: 1
           },
           {
+            id: 33,
             nom: "Bento végétarien",
-            img: "bento_vegetarien.jpg",
+            img: "./assets/images/bentos/vege.jpg",
             prix: 18,
             note: 4.5,
             temps_prepa: 20,
             categorie: "bento",
-            ingredients: ["tofu", "riz", "légumes"]
+            ingredients: ["tofu", "riz", "légumes"],
+            quantité: 1
           },
           {
+            id: 34,
             nom: "Bento katsu",
-            img: "bento_katsu.jpg",
+            img: "./assets/images/bentos/kastu.jpg",
             prix: 21,
             note: 4.9,
             temps_prepa: 26,
             categorie: "bento",
-            ingredients: ["porc", "riz", "sauce katsu"]
+            ingredients: ["porc", "riz", "sauce katsu"],
+            quantité: 1
           },
           {
+            id: 35,
             nom: "Bento tempura",
-            img: "bento_tempura.jpg",
+            img: "./assets/images/bentos/tempura.png",
             prix: 19,
             note: 4.6,
             temps_prepa: 24,
             categorie: "bento",
-            ingredients: ["crevettes", "légumes", "sauce tempura"]
+            ingredients: ["crevettes", "légumes", "sauce tempura"],
+            quantité: 1
           },
           {
+            id: 36,
             nom: "Bento yakitori",
-            img: "bento_yakitori.jpg",
+            img: "./assets/images/bentos/Yakitori.jpg",
             prix: 23,
             note: 4.7,
             temps_prepa: 27,
             categorie: "bento",
-            ingredients: ["poulet", "brochette", "riz"]
+            ingredients: ["poulet", "brochette", "riz"],
+            quantité: 1
           },
           {
+            id: 37,
             nom: "Bento sushi",
-            img: "bento_sushi.jpg",
+            img: "./assets/images/bentos/sushi.jpg",
             prix: 24,
             note: 4.8,
             temps_prepa: 28,
             categorie: "bento",
-            ingredients: ["saumon", "thon", "crevette"]
+            ingredients: ["saumon", "thon", "crevette"],
+            quantité: 1
           },
           {
+            id: 38,
             nom: "Bento chirashi",
-            img: "bento_chirashi.jpg",
+            img: "./assets/images/bentos/chirashi.jpg",
             prix: 25,
             note: 4.9,
             temps_prepa: 29,
             categorie: "bento",
-            ingredients: ["saumon", "thon", "omelette"]
+            ingredients: ["saumon", "thon", "omelette"],
+            quantité: 1
           },
           {
+            id: 39,
             nom: "Bento tonkatsu",
-            img: "bento_tonkatsu.jpg",
+            img: "./assets/images/bentos/tonkatsu.jpg",
             prix: 26,
             note: 4.8,
             temps_prepa: 30,
             categorie: "bento",
-            ingredients: ["porc", "riz", "sauce tonkatsu"]
+            ingredients: ["porc", "riz", "sauce tonkatsu"],
+            quantité: 1
           },
           {
+            id: 40,
             nom: "Bento california",
-            img: "bento_california.jpg",
+            img: "./assets/images/bentos/california.jpg",
             prix: 22,
             note: 4.7,
             temps_prepa: 26,
             categorie: "bento",
-            ingredients: ["crabe", "avocat", "concombre"]
-          }
-        ],
-        "autres": [
+            ingredients: ["crabe", "avocat", "concombre"],
+            quantité: 1
+          },
           {
+            id: 41,
             nom: "Tempura de crevettes",
-            img: "tempura_crevettes.jpg",
+            img: "./assets/images/autres/tempura-crevettes.jpg",
             prix: 16,
             note: 4.6,
             temps_prepa: 18,
-            categorie: "autres",
-            ingredients: ["crevettes", "pâte", "sauce"]
+            categorie: "autre",
+            ingredients: ["crevettes", "pâte", "sauce"],
+            quantité: 1
+
           },
           {
+            id: 42,
             nom: "Gyoza",
-            img: "gyoza.jpg",
+            img: "./assets/images/autres/gyoza.jpg",
             prix: 14,
             note: 4.4,
             temps_prepa: 16,
-            categorie: "autres",
-            ingredients: ["porc", "légumes", "pâte"]
+            categorie: "autre",
+            ingredients: ["porc", "légumes", "pâte"],
+            quantité: 1
           },
           {
+            id: 43,
             nom: "Edamame",
-            img: "edamame.jpg",
+            img: "./assets/images/autres/edamame.jpg",
             prix: 8,
             note: 4.0,
             temps_prepa: 10,
-            categorie: "autres",
-            ingredients: ["soja", "sel"]
+            categorie: "autre",
+            ingredients: ["soja", "sel"],
+            quantité: 1
           },
           {
+            id: 44,
             nom: "Takoyaki",
-            img: "takoyaki.jpg",
+            img: "./assets/images/autres/takoyaki.jpg",
             prix: 15,
             note: 4.5,
             temps_prepa: 17,
-            categorie: "autres",
-            ingredients: ["poulpe", "pâte", "sauce"]
+            categorie: "autre",
+
+            ingredients: ["poulpe", "pâte", "sauce"],
+            quantité: 1
           },
           {
+            id: 45,
             nom: "Sashimi de daurade",
-            img: "sashimi_daurade.jpg",
+            img: "./assets/images/autres/sashimi-daurade.jpg",
             prix: 17,
             note: 4.7,
             temps_prepa: 19,
-            categorie: "autres",
-            ingredients: ["daurade", "citron", "herbes"]
+            categorie: "autre",
+            ingredients: ["daurade", "citron", "herbes"],
+            quantité: 1
           },
           {
+            id: 46,
             nom: "Yakitori",
-            img: "yakitori.jpg",
+            img: "./assets/images/autres/yakitori.jpg",
             prix: 12,
             note: 4.3,
             temps_prepa: 14,
-            categorie: "autres",
-            ingredients: ["poulet", "brochette", "sauce"]
+            categorie: "autre",
+            ingredients: ["poulet", "brochette", "sauce"],
+            quantité: 1
           },
           {
+            id: 47,
             nom: "Karaage",
-            img: "karaage.jpg",
+            img: "./assets/images/autres/karaage.jpg",
             prix: 13,
             note: 4.4,
             temps_prepa: 15,
-            categorie: "autres",
-            ingredients: ["poulet", "marinade", "friture"]
+            categorie: "autre",
+            ingredients: ["poulet", "marinade", "friture"],
+            quantité: 1
           },
           {
+            id: 48,
             nom: "Chawanmushi",
-            img: "chawanmushi.jpg",
+            img: "./assets/images/autres/Chawanmushi.jpg",
             prix: 16,
             note: 4.6,
             temps_prepa: 18,
-            categorie: "autres",
-            ingredients: ["œuf", "bouillon", "garnitures"]
+            categorie: "autre",
+            ingredients: ["œuf", "bouillon", "garnitures"],
+            quantité: 1
           },
           {
+            id: 49,
             nom: "Onigiri",
-            img: "onigiri.jpg",
+            img: "./assets/images/autres/onigiri.jpg",
             prix: 9,
             note: 4.1,
             temps_prepa: 11,
-            categorie: "autres",
-            ingredients: ["riz", "algue", "garniture"]
+            categorie: "autre",
+            ingredients: ["riz", "algue", "garniture"],
+            quantité: 1
           },
           {
+            id: 50,
             nom: "Miso",
-            img: "miso.jpg",
+            img: "./assets/images/autres/Miso.jpg",
             prix: 7,
             note: 3.9,
             temps_prepa: 10,
-            categorie: "autres",
-            ingredients: ["pâte miso", "eau", "tofu"]
+            categorie: "autre",
+            ingredients: ["pâte miso", "eau", "tofu"],
+            quantité: 1
           }
         ]
-      }
 
-
-
-      export default articles;
+export default articles;
