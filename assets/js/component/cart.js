@@ -157,7 +157,7 @@ order_number.innerText = `Numéro de commande : ${Math.floor(random(1000,10000))
                     
                     if (cart[i].quantité < 1) {
                         let articleCart = document.querySelectorAll('article');
-                        produits[i].quantité = 1;        
+                        cart[i].quantité = 1;        
                         cart.splice(i,1)            
                         articleCart[i].remove();
                     }
