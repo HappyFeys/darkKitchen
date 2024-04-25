@@ -1,1 +1,8 @@
-/*# sourceMappingURL=panier.css.map */
+#cart {
+  border: 1px solid black;
+}
+#cart #cart__orderNumber h2 {
+  margin-left: 16px;
+  font-size: 24px;
+  font-weight: 700;
+}/*# sourceMappingURL=panier.css.map */

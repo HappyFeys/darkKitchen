@@ -15,3 +15,11 @@ import sort from './component/sort.js';
 
 // Maintenant vous pouvez utiliser le fichier importé ici
 sort();
+
+import toggleBurgerMenu from './component/burgerMenu.js';
+
+toggleBurgerMenu();
+
+import switchMode from './component/darkmode.js';
+
+switchMode();

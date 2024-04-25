@@ -9,7 +9,7 @@ const cartComponent = () => {
   const cart__orderList = document.getElementById("cart__orderList");
   //ajout de chaque élements dans le tableau cart lors du click
   for (let i = 0; i < articles.length; i++) {
-    addToCartButton[i].addEventListener('click', () => {
+    addToCartButton[i].addEventListener('click', (e) => {
         cart__orderList.innerHTML = "";
         const articles = document.querySelectorAll('article');
         if (cart.length > 0) {
@@ -40,16 +40,24 @@ const cartComponent = () => {
         
         let total=0;
 
-        cart.forEach(element => {
             //création des élement
-            let achats = document.createElement("article");
+            let cartArticle = document.createElement("article");
 
-            let articlequantity = document.createElement('div');
-            let achatTitle = document.createElement("h2");
-            let achatImage = document.createElement("div");
-            achatImage.classList.add("picture-div");
-    
-            achats.classList.add(element.id);
+            let data_img = document.createElement("div");
+            let data_article = document.createElement('div');
+            let title = document.createElement("h2");
+            let quantity = document.createElement("div");
+            let price = document.createElement('h2');
+
+            
+            
+            //ajout de class
+            data_img.classList.add("picture-div");
+            cartArticle.classList.add('cart-article', element.id);
+            data_article.classList.add("data_article");
+            title.classList.add('title_article');
+            quantity.classList.add('quantity_article');
+            price.classList.add('price_article');
     
             //Ajout des données dans la carte
             achatTitle.textContent = element.nom;
@@ -59,7 +67,7 @@ const cartComponent = () => {
             achats.appendChild(achatTitle);
             cart__orderList.appendChild(achats);
         });
-    })   
+    }   
   }
   
   let toggle_cart = 0;
@@ -78,7 +86,7 @@ const cartComponent = () => {
     }
   })
 
-};
+;
 
 //Pour importer dans app.js
 export default cartComponent;
