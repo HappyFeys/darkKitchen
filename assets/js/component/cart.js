@@ -99,8 +99,8 @@ order_number.innerText = `Numéro de commande : ${Math.floor(random(1000,10000))
             //Ajout des élement dans le dom
             data_article.appendChild(price)
             data_article.appendChild(quantity)
-            data_article.appendChild(title)
             cartArticle.appendChild(data_img);
+            cartArticle.appendChild(title)
             cartArticle.appendChild(data_article);
             cart__orderList.appendChild(cartArticle);
 
