@@ -46,8 +46,25 @@ order_number.innerText = `Numéro de commande : ${Math.floor(random(1000,10000))
             cart.push(produits[i]);
         }
         console.log(cart);
+        let sousTotal = [];
+        let initialValue = 0
+
+       
         
-        let total=0;
+        for(let i =0; i<cart.length; i++){
+            
+            let element = cart[i];
+            
+            sousTotal.push(element.prix * element.quantité);
+            let totalValue = sousTotal.reduce((a,b) => a+b, initialValue,);
+
+            if (i === cart.length -1) {
+                //On affiche le prix total
+                document.getElementById('cart__orderTotal').innerHTML = `<h2>Total pour tous les articles : ${totalValue} €</h2>`
+            }
+            
+            
+
 
             //création des élement
             let cartArticle = document.createElement("article");
@@ -69,15 +86,93 @@ order_number.innerText = `Numéro de commande : ${Math.floor(random(1000,10000))
             price.classList.add('price_article');
     
             //Ajout des données dans la carte
-            achatTitle.textContent = element.nom;
-            achatImage.style.backgroundImage = `url(${element.img})`;
+            data_img.style.backgroundImage = `url(${element.img})`;
+            title.textContent = element.nom;
+            quantity.innerHTML = `
+            <button class="remove">-</button>
+            <h2>Quantité : ${element.quantité}</h2>
+            <button class="add">+</button>
+            `;
+            price.textContent = `Total : ${element.prix * element.quantité} €`;
+
+            
+            //Ajout des élement dans le dom
+            data_article.appendChild(price)
+            data_article.appendChild(quantity)
+            data_article.appendChild(title)
+            cartArticle.appendChild(data_img);
+            cartArticle.appendChild(data_article);
+            cart__orderList.appendChild(cartArticle);
+
+            
+            
+        };
+
+        let quantity_data = document.querySelectorAll('.quantity_article');
+            let remove = document.querySelectorAll('.remove');
+            let add = document.querySelectorAll('.add');
+            for (let i = 0; i < quantity_data.length; i++) {
+                add[i].addEventListener('click', () => {
+                    // augmente la quantité
+                    cart[i].quantité++;
+            
+                    // Met à jour la quantité
+                    let h2 = quantity_data[i].querySelector('h2');
+                    h2.textContent = `Quantité : ${cart[i].quantité}`;
+            
+                    // Met à jour le prix de l'item
+                    let totalPrice = cart[i].prix * cart[i].quantité;
+                    let priceElement = quantity_data[i].parentNode.querySelector('.price_article');
+                    priceElement.textContent = `Total : ${totalPrice} €`;
+            
+                    // Met à jour le pannier
+                    sousTotal.push(cart[i].prix);
+                    let totalValue = sousTotal.reduce((a, b) => a + b, 0);
+                    
+                    document.getElementById('cart__orderTotal').innerHTML = `<h2>Total pour tous les articles : ${totalValue} €</h2>`;
+                    
+                });
+
+                remove[i].addEventListener('click', () => {
+                    // augmente la quantité
+                    console.log(cart[i].quantité);
+                    cart[i].quantité--;
+                    console.log(cart[i].quantité);
+                    
+            
+                    // Met à jour la quantité
+                    let h2 = quantity_data[i].querySelector('h2');
+                    h2.textContent = `Quantité : ${cart[i].quantité}`;
+            
+                    // Met à jour le prix de l'item
+                    let totalPrice = cart[i].prix * cart[i].quantité;
+                    let priceElement = quantity_data[i].parentNode.querySelector('.price_article');
+                    priceElement.textContent = `Total : ${totalPrice} €`;
+            
+                    // Met à jour le pannier
+                    sousTotal.pop();
+                    let totalValue = sousTotal.reduce((a, b) => a + b, 0);
+                    
+                    document.getElementById('cart__orderTotal').innerHTML = `<h2>Total pour tous les articles : ${totalValue} €</h2>`;
+                    
+                    if (cart[i].quantité < 1) {
+                        let articleCart = document.querySelectorAll('article');
+                        produits[i].quantité = 1;        
+                        cart.splice(i,1)            
+                        articleCart[i].remove();
+                    }
+                    //reste à faire une fonction pour supprimer l'article du panier quand on arrive à 0
+                });
+            }
+
+            
+ 
+    })  
+
     
-            achats.appendChild(achatImage);
-            achats.appendChild(achatTitle);
-            cart__orderList.appendChild(achats);
-        });
-    }   
   }
+  
+
   
   let toggle_cart = 0;
   const nav__iconPanier = document.getElementById('nav__iconPanier');
@@ -95,9 +190,7 @@ order_number.innerText = `Numéro de commande : ${Math.floor(random(1000,10000))
     }
   })
 
-;
+};
 
 //Pour importer dans app.js
 export default cartComponent;
-
-
