@@ -88,6 +88,7 @@ const cartComponent = () => {
         let element = array[i];
 
         sousTotal.push(element.prix * element.quantité);
+        console.log(sousTotal);
         let totalValue = sousTotal.reduce((a, b) => a + b, initialValue);
 
         if (i === array.length - 1) {
@@ -183,36 +184,21 @@ const cartComponent = () => {
               document.getElementById('cart__orderTotal').innerHTML = `<h2>Total pour tous les articles : ${totalValue} €</h2>`;
               
               if (array[i].quantité < 1) {
-                  let articleCart = document.querySelectorAll('article');
+                  //reinitialise la quantité
                   array[i].quantité = 1;
-                  let nom = document.querySelectorAll('.title_article'); 
-                  console.log(nom[i]);
-                  
+                   //supprime l'article
                   array.splice(i,1);
-                  
-                        
-                            
+                  //réinitialise le prix total
+                  sousTotal = []
+                  //réinitialise le panier          
                   cart__orderList.innerHTML = '';
-                  
+                  //met à jour le tableau
                   createCart(array)
-                  
-                  
-                  
-
-                  
               }
-              sousTotal.splice(i,1)
-              
-              
-              
-              
           });
         }
       
     }
-
-
-    
   }
   
 
