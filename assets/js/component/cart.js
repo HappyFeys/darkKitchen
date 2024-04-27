@@ -37,12 +37,14 @@ const cartComponent = () => {
   //ajout de chaque élements dans le tableau cart lors du click
   for (let i = 0; i < articles.length; i++) {
     addToCartButton[i].addEventListener("click", () => {
+      
       //Ajout d'une animation sur l'icone du panier
       let iconcCartShopping = document.querySelector(".fa-cart-shopping");
+      let color = iconcCartShopping.style.color;
       iconcCartShopping.style.color = "red";
       iconcCartShopping.style.transform = "scale(1.1)";
       setTimeout(() => {
-        iconcCartShopping.style.color = "#5D576B";
+        iconcCartShopping.style.color = color;
         iconcCartShopping.style.transform = "scale(1)";
       }, 200);
 
