@@ -175,7 +175,7 @@ const cartComponent = () => {
               // Met à jour le prix de l'item
               let totalPrice = array[i].prix * array[i].quantité;
               let priceElement = quantity_data[i].parentNode.querySelector('.price_article');
-              priceElement.textContent = `Total : ${totalPrice - array[i].prix} €`;
+              priceElement.textContent = `Total : ${totalPrice} €`;
       
               // Met à jour le pannier
               sousTotal.pop();
