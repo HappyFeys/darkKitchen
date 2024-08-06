@@ -28,6 +28,9 @@ html {
 #cart #cart__orderNumber p #cart__orderDate {
   color: #c1c603;
 }
+#cart #cart__orderList .picture-div {
+  width: 50%;
+}
 #cart #cart__orderTotal {
   margin-left: 80px;
   font-size: 16px;
